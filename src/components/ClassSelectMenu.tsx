@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import { PlayerClass } from "../types/PlayerClass";
+import './ClassSelectMenu.css';
 
-const ClassSelectMenu: React.FC = (): JSX.Element => {
+const ClassSelectMenu = () => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const [selectItem, setSelectItem] = useState<PlayerClass>(PlayerClass.Warrior);
   
@@ -42,7 +43,7 @@ const ClassSelectMenu: React.FC = (): JSX.Element => {
         <div>
           {selectItem
             ? `You selected ${selectItem}`
-            : "Select your item"}
+            : "Select class"}
         </div>
       </div>
       <button
@@ -66,4 +67,4 @@ const ClassSelectMenu: React.FC = (): JSX.Element => {
   );
 };
 
-export default ClassSelectMenu;
+export default ClassSelectMenu
