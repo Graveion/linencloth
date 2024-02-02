@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import { PlayerClass } from "../types/PlayerClass";
 
-const Menu: React.FC = (): JSX.Element => {
+const ClassSelectMenu: React.FC = (): JSX.Element => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const [selectItem, setSelectItem] = useState<PlayerClass>(PlayerClass.Warrior);
   
@@ -38,6 +38,13 @@ const Menu: React.FC = (): JSX.Element => {
 
   return (
     <>
+    <div className="announcement">
+        <div>
+          {selectItem
+            ? `You selected ${selectItem}`
+            : "Select your item"}
+        </div>
+      </div>
       <button
         className={showDropdown ? "active" : undefined}
         onClick={(): void => toggleDropdown()}
@@ -45,7 +52,7 @@ const Menu: React.FC = (): JSX.Element => {
           dismissHandler(e)
         }
       >
-        <div>{selectItem ? selectItem : ""} </div>
+        <div>{selectItem ? selectItem : "Select ..."} </div>
         {showDropdown && (
           <Dropdown
             items={Object.values(PlayerClass)}
@@ -59,4 +66,4 @@ const Menu: React.FC = (): JSX.Element => {
   );
 };
 
-export default Menu;
+export default ClassSelectMenu;
