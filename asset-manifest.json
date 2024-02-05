@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/linencloth/static/css/main.b7ced900.css",
+    "main.css": "/linencloth/static/css/main.a2b5ad30.css",
     "main.js": "/linencloth/static/js/main.98be6d3a.js",
     "static/js/592.e8d692c2.chunk.js": "/linencloth/static/js/592.e8d692c2.chunk.js",
     "static/media/feet.jpg": "/linencloth/static/media/feet.e7426dc2ffe33c9b7b60.jpg",
@@ -11,12 +11,12 @@
     "static/media/legs.jpg": "/linencloth/static/media/legs.9c379be3ab4286689fd0.jpg",
     "static/media/waist.jpg": "/linencloth/static/media/waist.e8a7774863735c08eb24.jpg",
     "index.html": "/linencloth/index.html",
-    "main.b7ced900.css.map": "/linencloth/static/css/main.b7ced900.css.map",
+    "main.a2b5ad30.css.map": "/linencloth/static/css/main.a2b5ad30.css.map",
     "main.98be6d3a.js.map": "/linencloth/static/js/main.98be6d3a.js.map",
     "592.e8d692c2.chunk.js.map": "/linencloth/static/js/592.e8d692c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7ced900.css",
+    "static/css/main.a2b5ad30.css",
     "static/js/main.98be6d3a.js"
   ]
 }
