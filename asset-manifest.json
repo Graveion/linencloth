@@ -1,22 +1,17 @@
 {
   "files": {
     "main.css": "/linencloth/static/css/main.1f890268.css",
-    "main.js": "/linencloth/static/js/main.98be6d3a.js",
+    "main.js": "/linencloth/static/js/main.c3783bb9.js",
     "static/js/592.e8d692c2.chunk.js": "/linencloth/static/js/592.e8d692c2.chunk.js",
     "static/media/feet.jpg": "/linencloth/static/media/feet.e7426dc2ffe33c9b7b60.jpg",
     "static/media/chest.jpg": "/linencloth/static/media/chest.97499e70b290af7cd815.jpg",
-    "static/media/hands.jpg": "/linencloth/static/media/hands.859853bef53e27de95de.jpg",
-    "static/media/wrists.jpg": "/linencloth/static/media/wrists.73e44d506815e37661ee.jpg",
-    "static/media/head.jpg": "/linencloth/static/media/head.e2f421905d2bb9f28b1b.jpg",
-    "static/media/legs.jpg": "/linencloth/static/media/legs.9c379be3ab4286689fd0.jpg",
-    "static/media/waist.jpg": "/linencloth/static/media/waist.e8a7774863735c08eb24.jpg",
     "index.html": "/linencloth/index.html",
     "main.1f890268.css.map": "/linencloth/static/css/main.1f890268.css.map",
-    "main.98be6d3a.js.map": "/linencloth/static/js/main.98be6d3a.js.map",
+    "main.c3783bb9.js.map": "/linencloth/static/js/main.c3783bb9.js.map",
     "592.e8d692c2.chunk.js.map": "/linencloth/static/js/592.e8d692c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f890268.css",
-    "static/js/main.98be6d3a.js"
+    "static/js/main.c3783bb9.js"
   ]
 }
