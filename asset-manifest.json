@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/linencloth/static/css/main.e3855208.css",
-    "main.js": "/linencloth/static/js/main.f8c52a5c.js",
+    "main.js": "/linencloth/static/js/main.a3b9a3fa.js",
     "static/js/592.e8d692c2.chunk.js": "/linencloth/static/js/592.e8d692c2.chunk.js",
     "index.html": "/linencloth/index.html",
     "main.e3855208.css.map": "/linencloth/static/css/main.e3855208.css.map",
-    "main.f8c52a5c.js.map": "/linencloth/static/js/main.f8c52a5c.js.map",
+    "main.a3b9a3fa.js.map": "/linencloth/static/js/main.a3b9a3fa.js.map",
     "592.e8d692c2.chunk.js.map": "/linencloth/static/js/592.e8d692c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3855208.css",
-    "static/js/main.f8c52a5c.js"
+    "static/js/main.a3b9a3fa.js"
   ]
 }
