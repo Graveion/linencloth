@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/linencloth/static/css/main.1f890268.css",
-    "main.js": "/linencloth/static/js/main.60441682.js",
+    "main.js": "/linencloth/static/js/main.d9915f0b.js",
     "static/js/592.e8d692c2.chunk.js": "/linencloth/static/js/592.e8d692c2.chunk.js",
     "static/media/feet.jpg": "/linencloth/static/media/feet.e7426dc2ffe33c9b7b60.jpg",
     "static/media/chest.jpg": "/linencloth/static/media/chest.97499e70b290af7cd815.jpg",
@@ -12,11 +12,11 @@
     "static/media/waist.jpg": "/linencloth/static/media/waist.e8a7774863735c08eb24.jpg",
     "index.html": "/linencloth/index.html",
     "main.1f890268.css.map": "/linencloth/static/css/main.1f890268.css.map",
-    "main.60441682.js.map": "/linencloth/static/js/main.60441682.js.map",
+    "main.d9915f0b.js.map": "/linencloth/static/js/main.d9915f0b.js.map",
     "592.e8d692c2.chunk.js.map": "/linencloth/static/js/592.e8d692c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f890268.css",
-    "static/js/main.60441682.js"
+    "static/js/main.d9915f0b.js"
   ]
 }
