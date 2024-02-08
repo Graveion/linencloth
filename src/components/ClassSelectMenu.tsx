@@ -1,12 +1,22 @@
 import React, { useState } from "react";
-import Dropdown from "./Dropdown";
-import { PlayerClass } from "../types/PlayerClass";
 import './ClassSelectMenu.css';
+import Dropdown from "./Dropdown";
 
-const ClassSelectMenu = () => {
-  const [showDropdown, setShowDropdown] = useState<boolean>(false);
-  const [selectItem, setSelectItem] = useState<PlayerClass>(PlayerClass.Warrior);
-  
+export enum PlayerClass {
+    Warrior = 'Warrior',
+    Mage = "Mage",
+    Priest = "Priest",
+    Shaman = "Shaman",
+    Warlock = "Warlock",
+    Paladin = "Paladin",
+    Rogue = "Rogue",
+    Hunter = "Hunter",
+  }
+
+export const ClassSelectMenu = () => {
+    const [showDropdown, setShowDropdown] = useState<boolean>(false);
+    const [selectItem, setSelectItem] = useState<string>("Warrior")
+
   /**
    * Toggle the drop down menu
    */
@@ -34,37 +44,31 @@ const ClassSelectMenu = () => {
    * The selected item
    */
   const itemSelection = (item: string): void => {
-    setSelectItem(item as PlayerClass);
+    setSelectItem(item);
+    setShowDropdown(false)
   };
 
   return (
     <>
-    <div className="announcement">
-        <div>
-          {selectItem
-            ? `You selected ${selectItem}`
-            : "Select class"}
-        </div>
-      </div>
       <button
         className={showDropdown ? "active" : undefined}
-        onClick={(): void => toggleDropdown()}
+        onClick={toggleDropdown}
         onBlur={(e: React.FocusEvent<HTMLButtonElement>): void =>
           dismissHandler(e)
         }
       >
+
         <div>{selectItem ? selectItem : "Select ..."} </div>
         {showDropdown && (
-          <Dropdown
-            items={Object.values(PlayerClass)}
-            showDropDown={false}
-            toggleDropDown={(): void => toggleDropdown()}
-            itemSelection={itemSelection}
-          />
+        <Dropdown
+          items={Object.values(PlayerClass)}
+          showDropdown={showDropdown}
+          itemSelection={itemSelection}
+        />
         )}
       </button>
     </>
   );
-};
+}
 
 export default ClassSelectMenu
