@@ -19,7 +19,6 @@ const dropdownSlice = createSlice({
 });
 
 export const { selectOption } = dropdownSlice.actions;
-export const selectDropdownState = (state: { dropdown: DropdownState }) => state.dropdown;
 export const selectSelectedOption = (state: { dropdown: DropdownState }) => state.dropdown.selectedOption;
 
 // called selectors because they allow you select the state from a slice you require

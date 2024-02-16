@@ -1,21 +1,24 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectDropdownState, selectOption } from './DropdownSlice';
+import { useDispatch } from 'react-redux';
+import { selectOption } from './DropdownSlice';
 
-import '../../components/Dropdown.css';
+import './Dropdown.css';
 
 interface DropdownProps {
-  isVisible: boolean;
-  options: string[];
+    isVisible: boolean;
+    options: string[];
+}
+
+function Item(title: string): React.JSX.Element {
+    return <p>{title}</p>
 }
 
 const Dropdown: React.FC<DropdownProps> = ({ isVisible, options }) => {
-  const { selectedOption } = useSelector(selectDropdownState);
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  const handleSelectOption = (option: string) => {
-    dispatch(selectOption(option));
-  };
+    const handleSelectOption = (option: string) => {
+        dispatch(selectOption(option));
+    };
 
     return isVisible ? (
         <>
@@ -23,20 +26,19 @@ const Dropdown: React.FC<DropdownProps> = ({ isVisible, options }) => {
                 {options.map(
                     (option: string, index: number): JSX.Element => {
                         return (
-                            <p
+                            <img
                                 key={index}
-                                onClick={(): void => {
+                                onClick={() => {
                                     handleSelectOption(option);
                                 }}
-                            >
-                                {option}
-                            </p>
+                                src={`${option}.jpg`} alt={option}
+                            />
                         );
                     }
                 )}
             </div>
         </>
-  ) : null;
+    ) : null;
 };
 
 export default Dropdown;

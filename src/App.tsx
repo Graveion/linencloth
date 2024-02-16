@@ -1,7 +1,6 @@
 import React from 'react';
-import { PlayerClass } from "./components/ClassSelectMenu";
 import ReduxMenu from "./features/classselectmenu/ClassSelectMenu"
-import RuneExplorer from "./components/RuneExplorer";
+import RuneExplorer from "./features/runeexplorer/RuneExplorer";
 import './App.css';
 
 // todo: need to get selection from menu and use redux
@@ -15,7 +14,7 @@ function App() {
           </p>
         </header>
         <ReduxMenu />
-        <RuneExplorer playerClass={PlayerClass.Warrior} />
+        <RuneExplorer/>
       </div>
   );
 }

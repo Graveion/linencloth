@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { PlayerClass } from "../../components/ClassSelectMenu"
+import { PlayerClass } from "./ClassSelectMenu"
 
 interface ClassSelectMenuSliceState {
     selectedClass: PlayerClass

@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
-import '../../components/ClassSelectMenu.css';
+import './ClassSelectMenu.css';
 import { setShowDropdown, selectClass, showDropdown, selectedClass } from "./ClassSelectMenuSlice";
 import DropdownRedux from "../dropdown/Dropdown";
 
 import { selectSelectedOption } from '../dropdown/DropdownSlice';
 
+import { loadRuneData } from '../runeexplorer/RuneExplorerSlice';
+
 export enum PlayerClass {
-    Warrior = 'Warrior',
-    Mage = "Mage",
-    Priest = "Priest",
-    Shaman = "Shaman",
-    Warlock = "Warlock",
-    Paladin = "Paladin",
-    Rogue = "Rogue",
-    Hunter = "Hunter",
-  }
+  Warrior = 'Warrior',
+  Mage = "Mage",
+  Priest = "Priest",
+  Shaman = "Shaman",
+  Warlock = "Warlock",
+  Paladin = "Paladin",
+  Rogue = "Rogue",
+  Hunter = "Hunter",
+}
 
 export const ClassSelectMenuRedux = () => {
     const dispatch = useAppDispatch()
 
     const dropdown = useAppSelector(showDropdown)
-    const playerClass = useAppSelector(selectedClass)
-
     const selectedOption = useAppSelector(selectSelectedOption);
 
   /**
@@ -37,6 +37,13 @@ export const ClassSelectMenuRedux = () => {
       dispatch(setShowDropdown(false));
     }
   };
+
+  useEffect(() => {
+    // Dispatch the action from the other slice when the selected option changes
+    dispatch(loadRuneData(selectedOption));
+  }, [selectedOption, dispatch]);
+
+  const imgPrefix = "../../img/classicon/"
 
   return (
     <>
@@ -53,6 +60,15 @@ export const ClassSelectMenuRedux = () => {
           isVisible={dropdown}
           />
       </button>
+      {selectedOption && (
+        <div className="selected-option">
+          <img
+            src={imgPrefix.concat(selectedOption?.concat(".png"))}
+            alt="Selected Option"
+            style={{ maxWidth: '64px', maxHeight: '64px' }}
+          />
+        </div>
+      )}
     </>
   );
 }
