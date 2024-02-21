@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useAppSelector } from "../../app/hooks"
 
 import { runes, selectedRunes } from './RuneExplorerSlice';
@@ -19,6 +18,7 @@ export const RuneExplorer = () => {
 
     const classRunes = useAppSelector(runes);
     const selectedRunesState = useAppSelector(selectedRunes);
+   
 
     // todo: supply slot filtered runes to each 
     // classRunes.filter((rune) => rune.getSlot() === 'chest')
@@ -30,9 +30,6 @@ export const RuneExplorer = () => {
     // and we need an array here
     // and to capture each selected value
     // use effect the rune
-
-    const slotImagePrefix = "../img/"
-    const runeImagePrefix = "../img/runeIcon/"
 
     const defaultSlotImage = (slot: string) => {
        return ( 

@@ -9,11 +9,7 @@ interface DropdownProps {
     options: string[];
 }
 
-function Item(title: string): React.JSX.Element {
-    return <p>{title}</p>
-}
-
-const Dropdown: React.FC<DropdownProps> = ({ isVisible, options }) => {
+const Dropdown = ({ isVisible, options }: DropdownProps) => {
     const dispatch = useDispatch();
 
     const handleSelectOption = (option: string) => {

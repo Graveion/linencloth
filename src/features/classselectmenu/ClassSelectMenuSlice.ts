@@ -1,15 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { PlayerClass } from "./ClassSelectMenu"
 
 interface ClassSelectMenuSliceState {
     selectedClass: PlayerClass
-    showDropdown: boolean
 }
 
 const initialState: ClassSelectMenuSliceState = {
-    selectedClass: PlayerClass.Warrior,
-    showDropdown: false,
+    selectedClass: PlayerClass.Warrior
 }
 
 const classSelectMenuSlice = createSlice({
@@ -19,13 +16,9 @@ const classSelectMenuSlice = createSlice({
         selectClass(state, action: PayloadAction<string>) {
             state.selectedClass = action.payload as PlayerClass
         },
-        setShowDropdown(state, action: PayloadAction<boolean>) {
-            state.showDropdown = action.payload
-        },
     },
     selectors: {
         selectedClass: classSelectMenu => classSelectMenu.selectedClass,
-        showDropdown: classSelectMenu => classSelectMenu.showDropdown,
     },
 })
 

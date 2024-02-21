@@ -16,7 +16,7 @@ const runeSelectMenuSlice = createSlice({
     name: 'runeSelectMenu',
     initialState,
     reducers: {
-        selectClass(state, action: PayloadAction<Rune>) {
+        selectRune(state, action: PayloadAction<Rune>) {
             state.selectedRune = action.payload as Rune
         },
         setShowDropdown(state, action: PayloadAction<boolean>) {
@@ -30,6 +30,6 @@ const runeSelectMenuSlice = createSlice({
 })
 
 export const { selectSelectedRune, showDropdown } = runeSelectMenuSlice.selectors
-export const { selectClass, setShowDropdown } = runeSelectMenuSlice.actions
+export const { selectRune, setShowDropdown } = runeSelectMenuSlice.actions
 
 export default runeSelectMenuSlice.reducer

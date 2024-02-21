@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
-import './ClassSelectMenu.css';
 import { selectClass, selectedClass } from "./ClassSelectMenuSlice";
+// import { loadRuneData } from '../runeexplorer/RuneExplorerSlice';
 
-import { loadRuneData } from '../runeexplorer/RuneExplorerSlice';
+import './ClassSelectMenu.css';
 
 export enum PlayerClass {
-  Warrior = 'Warrior',
-  Mage = "Mage",
-  Priest = "Priest",
-  Shaman = "Shaman",
-  Warlock = "Warlock",
-  Paladin = "Paladin",
-  Rogue = "Rogue",
-  Hunter = "Hunter",
+  Warrior = 'warrior',
+  Mage = "mage",
+  Priest = "priest",
+  Shaman = "shaman",
+  Warlock = "warlock",
+  Paladin = "paladin",
+  Rogue = "rogue",
+  Hunter = "hunter",
 }
 
 export const ClassSelectMenuRedux = () => {
@@ -22,25 +22,23 @@ export const ClassSelectMenuRedux = () => {
 
   const selectedOption = useAppSelector(selectedClass);
 
-  useEffect(() => {
-    // Dispatch the action from the RuneExplorer slice when the selected option changes
-    dispatch(loadRuneData(selectedOption));
-  }, [selectedOption, dispatch]);
-
-  const imgPrefix = "../../img/classicon/"
+  // useEffect(() => {
+  //   // Dispatch the action from the RuneExplorer slice when the selected option changes
+  //   dispatch(loadRuneData(selectedOption));
+  // }, [selectedOption, dispatch]);
 
   const renderClassButtons = () => {
     return Object.values(PlayerClass).map((option) => (
 
       <button
         key={option}
-        className={`image-button ${selectedOption === option ? 'selected' : ''}`}
+        className={"image-button"}
         onClick={() => dispatch(selectClass(option))}
       >
 
         <img
-          src={imgPrefix.concat(selectedOption?.concat(".png"))}
-          alt="Selected Option"
+          src={`../../img/classicon/${option}.png`}
+          alt="Class Icon"
           style={{ maxWidth: '64px', maxHeight: '64px' }}
         />
 
@@ -52,7 +50,6 @@ export const ClassSelectMenuRedux = () => {
   return (
     <div>
       <h2>Select a class:</h2>
-      {renderClassButtons()}
     </div>
   );
 }

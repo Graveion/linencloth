@@ -16,11 +16,12 @@ const dropdownSlice = createSlice({
       state.selectedOption = action.payload;
     },
   },
+  selectors: {
+    selectSelectedOption: dropdown => dropdown.selectedOption,
+  },
 });
 
 export const { selectOption } = dropdownSlice.actions;
-export const selectSelectedOption = (state: { dropdown: DropdownState }) => state.dropdown.selectedOption;
-
-// called selectors because they allow you select the state from a slice you require
+export const { selectSelectedOption } = dropdownSlice.selectors;
 
 export default dropdownSlice.reducer;

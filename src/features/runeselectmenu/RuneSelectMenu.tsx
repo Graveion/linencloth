@@ -3,9 +3,10 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
 import { setShowDropdown, selectSelectedRune, showDropdown } from "./RuneSelectMenuSlice";
 
-import './RuneSelectMenu.css';
 import { Rune } from "../../types/Rune";
 import Dropdown from "../dropdown/Dropdown";
+
+import './RuneSelectMenu.css';
 
 interface RuneSelectMenuProps {
     runes: Rune[];
