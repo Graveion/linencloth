@@ -1,6 +1,7 @@
 [
     {
         "name": "Warbringer",
+        "damageFormulas" : [],
         "description" : "",
         "playerClass": "Warrior",
         "icon": "../../img/runeicon/warbringer.png",

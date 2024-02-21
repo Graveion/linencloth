@@ -17,15 +17,13 @@ export enum RuneType {
 export class Rune {
     private description: string;
     private damageFormulas: string[];
-    private runeType: RuneType;
     private icon: string;
     private playerClass: string;
     private slot: string;
 
-    constructor(description: string, damageFormulas: string[], runeType: RuneType, icon: string, playerClass: string, slot: string) {
+    constructor(description: string, damageFormulas: string[], icon: string, playerClass: string, slot: string) {
         this.description = description;
         this.damageFormulas = damageFormulas;
-        this.runeType = runeType;
         this.icon = icon
         this.playerClass = playerClass;
         this.slot = slot;
@@ -34,11 +32,7 @@ export class Rune {
     getDescription(): string {
         return this.description
     }
-
-    getRuneType(): RuneType {
-        return this.runeType
-    }
-
+    
     getIcon(): string {
         return this.icon
     }

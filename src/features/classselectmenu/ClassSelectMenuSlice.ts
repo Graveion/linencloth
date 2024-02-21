@@ -29,7 +29,7 @@ const classSelectMenuSlice = createSlice({
     },
 })
 
-export const { selectedClass, showDropdown } = classSelectMenuSlice.selectors
-export const { selectClass, setShowDropdown } = classSelectMenuSlice.actions
+export const { selectedClass } = classSelectMenuSlice.selectors
+export const { selectClass } = classSelectMenuSlice.actions
 
 export default classSelectMenuSlice.reducer
