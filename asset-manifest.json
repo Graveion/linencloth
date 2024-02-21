@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/linencloth/static/css/main.fbf680d3.css",
-    "main.js": "/linencloth/static/js/main.6ac2c384.js",
-    "static/js/592.e8d692c2.chunk.js": "/linencloth/static/js/592.e8d692c2.chunk.js",
-    "static/media/feet.jpg": "/linencloth/static/media/feet.e7426dc2ffe33c9b7b60.jpg",
-    "static/media/chest.jpg": "/linencloth/static/media/chest.97499e70b290af7cd815.jpg",
-    "static/media/hands.jpg": "/linencloth/static/media/hands.859853bef53e27de95de.jpg",
-    "static/media/wrists.jpg": "/linencloth/static/media/wrists.73e44d506815e37661ee.jpg",
-    "static/media/head.jpg": "/linencloth/static/media/head.e2f421905d2bb9f28b1b.jpg",
-    "static/media/legs.jpg": "/linencloth/static/media/legs.9c379be3ab4286689fd0.jpg",
-    "static/media/waist.jpg": "/linencloth/static/media/waist.e8a7774863735c08eb24.jpg",
+    "main.css": "/linencloth/static/css/main.7199a7cb.css",
+    "main.js": "/linencloth/static/js/main.de04c195.js",
+    "static/js/453.56f46472.chunk.js": "/linencloth/static/js/453.56f46472.chunk.js",
     "index.html": "/linencloth/index.html",
-    "main.fbf680d3.css.map": "/linencloth/static/css/main.fbf680d3.css.map",
-    "main.6ac2c384.js.map": "/linencloth/static/js/main.6ac2c384.js.map",
-    "592.e8d692c2.chunk.js.map": "/linencloth/static/js/592.e8d692c2.chunk.js.map"
+    "main.7199a7cb.css.map": "/linencloth/static/css/main.7199a7cb.css.map",
+    "main.de04c195.js.map": "/linencloth/static/js/main.de04c195.js.map",
+    "453.56f46472.chunk.js.map": "/linencloth/static/js/453.56f46472.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbf680d3.css",
-    "static/js/main.6ac2c384.js"
+    "static/css/main.7199a7cb.css",
+    "static/js/main.de04c195.js"
   ]
 }
