@@ -1,24 +1,27 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
-import { setShowDropdown, selectSelectedRune, showDropdown } from "./RuneSelectMenuSlice";
+import { setShowDropdown, showDropdown } from "./RuneSelectMenuSlice";
+import { setSelectedRune } from "../runeexplorer/RuneExplorerSlice"
 
 import { Rune } from "../../types/Rune";
+
+import { selectSelectedOption } from "../dropdown/DropdownSlice";
 import Dropdown from "../dropdown/Dropdown";
 
 import './RuneSelectMenu.css';
 
 interface RuneSelectMenuProps {
-    runes: Rune[];
-    selectedRune: Rune | undefined
-    slotImage: string
+  runes: Rune[];
+  selectedRune?: Rune
+  slotImage: string
 }
 
 export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage }) => {
-    const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch()
 
-    const dropdown = useAppSelector(showDropdown)
-    const selectedRune = useAppSelector(selectSelectedRune);
+  const dropdown = useAppSelector(showDropdown)
+  const dropdownSelection = useAppSelector(selectSelectedOption)
 
   /**
    * Hide the drop down menu if click occurs
@@ -32,23 +35,11 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage
     }
   };
 
-//   useEffect(() => {
-//     // Dispatch the action from the RuneExplorerSlice when the selected option changes
-//     dispatch(setSelectedRune(selectedRune));
-//   }, [selectedRune, dispatch]);
+  useEffect(() => {
+    // Dispatch the action from the RuneExplorerSlice when the selected option changes
+    dispatch(setSelectedRune(dropdownSelection));
+  }, [dropdownSelection, dispatch]);
 
-  const icon = () => {
-    return (
-        selectedRune ?
-            <div>
-                <img src={selectedRune.getIcon()} alt={selectedRune.getIcon()} />
-            </div>
-            :
-            <div>
-                <img src={slotImage} alt={'empty'} />
-            </div>
-    );
-  }
 
   return (
     <>
@@ -59,11 +50,13 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage
           dismissHandler(e)
         }
       >
-        icon()
-         <Dropdown
-          options={ runes.map((rune: Rune) => { return rune.getIcon() }) } // map icon urls, since dropdown is generic we need to really start using full urls
+        <Dropdown
+          options={runes.map((rune: Rune) => {
+            return { id: rune.name, imgURI: rune.icon };
+          })}
+
           isVisible={dropdown}
-          />
+        />
       </button>
     </>
   );

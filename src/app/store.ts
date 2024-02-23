@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import classselectmenuslice from "../features/classselectmenu/ClassSelectMenuSlice" 
+import classSelectMenuSlice from "../features/classselectmenu/ClassSelectMenuSlice" 
 import dropdownSlice from "../features/dropdown/DropdownSlice" 
 import runeExplorerSlice from "../features/runeexplorer/RuneExplorerSlice" 
 import logger from 'redux-logger'
 import runeSelectMenuSlice from '../features/runeselectmenu/RuneSelectMenuSlice'
 
 const reducer = {
-  classSelectMenu: classselectmenuslice,
+  classSelectMenu: classSelectMenuSlice,
   dropdown: dropdownSlice,
   runeExplorer: runeExplorerSlice,
   runeSelectMenu: runeSelectMenuSlice,

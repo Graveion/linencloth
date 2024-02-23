@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { PlayerClass } from "./ClassSelectMenu"
+import { PlayerClass } from '../../types/PlayerClass'
 
 interface ClassSelectMenuSliceState {
-    selectedClass: PlayerClass
+    selectedPlayerClass: PlayerClass
 }
 
 const initialState: ClassSelectMenuSliceState = {
-    selectedClass: PlayerClass.Warrior
+    selectedPlayerClass: PlayerClass.Warrior
 }
 
 const classSelectMenuSlice = createSlice({
@@ -14,11 +14,11 @@ const classSelectMenuSlice = createSlice({
     initialState,
     reducers: {
         selectClass(state, action: PayloadAction<string>) {
-            state.selectedClass = action.payload as PlayerClass
+            state.selectedPlayerClass = action.payload as PlayerClass
         },
     },
     selectors: {
-        selectedClass: classSelectMenu => classSelectMenu.selectedClass,
+        selectedClass: classSelectMenu => classSelectMenu.selectedPlayerClass,
     },
 })
 

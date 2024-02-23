@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import '../../components/Dropdown.css';
-import { Rune } from '../types/Rune';
+import { Rune, calculateValues } from '../types/Rune';
 
 interface RuneDescriptorProps {
     rune: Rune;
@@ -20,9 +20,9 @@ const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
 
     // todo: lookup how to interpolate string?
     const substitutedDescription = () => {
-        const runeDesc = rune.getDescription()
+        const runeDesc = rune.description
 
-        rune.calculateValues(level).map(
+        calculateValues(level, rune.damageFormulas).map(
             (value: number, index: number) => {
                 const indexString = "{" + index.toString() + "}"
                 runeDesc.replace(indexString, value.toString());
@@ -35,7 +35,7 @@ const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
     return (
         <div className={'descriptor'}>
             <p>{substitutedDescription()}</p>
-            <img src={imagePrefix.concat(rune.getIcon())} alt="RuneIcon" />
+            <img src={imagePrefix.concat(rune.icon)} alt="RuneIcon" />
         </div>
     );
 };

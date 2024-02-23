@@ -1,12 +1,18 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { selectOption } from './DropdownSlice';
+import { images } from '../../img/images'
 
 import './Dropdown.css';
 
 interface DropdownProps {
     isVisible: boolean;
-    options: string[];
+    options: DropdownItem[];
+}
+
+interface DropdownItem {
+    id: string
+    imgURI: string
 }
 
 const Dropdown = ({ isVisible, options }: DropdownProps) => {
@@ -20,14 +26,14 @@ const Dropdown = ({ isVisible, options }: DropdownProps) => {
         <>
             <div className={isVisible ? 'dropdown' : 'dropdown active'}>
                 {options.map(
-                    (option: string, index: number): JSX.Element => {
+                    (option: DropdownItem, index: number): JSX.Element => {
                         return (
                             <img
                                 key={index}
                                 onClick={() => {
-                                    handleSelectOption(option);
+                                    handleSelectOption(option.id);
                                 }}
-                                src={`${option}.jpg`} alt={option}
+                                src={images[`${option.imgURI}`]} alt={option.id}
                             />
                         );
                     }

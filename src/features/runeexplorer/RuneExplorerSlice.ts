@@ -1,31 +1,45 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Rune } from '../../types/Rune';
-import { runeDB } from '../../data/RuneDB'
+import { RuneDB } from '../../data/RuneDB'
 import { Slot } from './RuneExplorer';
+import { PlayerClass } from '../../types/PlayerClass';
 
 interface RuneExplorerState {
   runes: Rune[];
-  selectedRunes: Map<Slot, Rune>;
+  selectedRunes: Record<Slot, Rune>;
+}
+
+interface SelectedRune {
+  slot: Slot
+  rune: Rune
 }
 
 const initialState: RuneExplorerState = {
   runes: [],
-  selectedRunes: new Map<Slot, Rune>(),
+  selectedRunes: {} as Record<Slot, Rune>,
 };
 
+let runeDB = new RuneDB()
+
 const runeExplorerSlice = createSlice({
-    name: 'runeExplorer',
-    initialState,
-    reducers: {
-        loadRuneData: (state, action: PayloadAction<string>) => {
-            state.runes = runeDB.filter((rune) => rune.getPlayerClass() === action.payload)
-            state.selectedRunes = new Map<Slot, Rune>();
-        },
+  name: 'runeExplorer',
+  initialState,
+  reducers: {
+    loadRuneData: (state, action: PayloadAction<string>) => {
+      state.runes = runeDB.getRunes().filter((rune) => rune.playerClass === action.payload)
+      state.selectedRunes = {} as Record<Slot, Rune>;
     },
-    selectors: {
-        runes: runeExplorer => runeExplorer.runes,
-        selectedRunes: runeExplorer => runeExplorer.selectedRunes,
-    },
+    setSelectedRune: (state, action: PayloadAction<string>) => {
+      let selectedRune = state.runes.find(e => (e.name === action.payload))
+      if (selectedRune !== undefined) {
+        state.selectedRunes[selectedRune.slot as Slot] = selectedRune
+      }
+    }
+  },
+  selectors: {
+    selectRunes: runeExplorer => runeExplorer.runes,
+    selectedRunes: runeExplorer => runeExplorer.selectedRunes,
+  },
 });
 
 // What do we need to do:
@@ -41,7 +55,7 @@ const runeExplorerSlice = createSlice({
 // we also need a level selector for damage formulas
 
 
-export const { loadRuneData } = runeExplorerSlice.actions;
-export const { runes, selectedRunes } = runeExplorerSlice.selectors
+export const { loadRuneData, setSelectedRune } = runeExplorerSlice.actions;
+export const { selectRunes, selectedRunes } = runeExplorerSlice.selectors
 
 export default runeExplorerSlice.reducer;

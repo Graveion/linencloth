@@ -1,22 +1,28 @@
 import { useAppSelector } from "../../app/hooks"
 
-import { runes, selectedRunes } from './RuneExplorerSlice';
+import { images } from '../../img/images'
+
+import { Rune } from '../../types/Rune'
+
+import { RuneSelectMenu } from '../runeselectmenu/RuneSelectMenu'
+
+import { selectRunes, selectedRunes } from './RuneExplorerSlice';
 
 import './RuneExplorer.css';
 
 export enum Slot {
-    Chest = 'chest',
-    Feet = "feet",
-    Hands = "hands",
-    Head = "head",
-    Legs = "legs",
-    Waist = "waist",
-    Wrist = "wrist",
+    Chest = 'Chest',
+    Feet = "Feet",
+    Hands = "Hands",
+    Head = "Head",
+    Legs = "Legs",
+    Waist = "Waist",
+    Wrist = "Wrist",
 }
 
 export const RuneExplorer = () => {
 
-    const classRunes = useAppSelector(runes);
+    const classRunes = useAppSelector(selectRunes);
     const selectedRunesState = useAppSelector(selectedRunes);
    
 
@@ -33,16 +39,16 @@ export const RuneExplorer = () => {
 
     const defaultSlotImage = (slot: string) => {
        return ( 
-        <div>
-            <img src={`../img/${slot}.jpg`} alt={slot} />
+        <div key={slot}>
+            <img src={images[`./${slot}.jpg`]} alt={slot} />
         </div>
        )
     }
 
-    const runeImage = (runeImgURL: string) => {
+    const runeImage = (rune: Rune) => {
         return (
-            <div>
-                <img src={runeImgURL} alt={"selected rune image"} />
+            <div key={rune.icon}>
+                <img src={images[`${rune.icon}`]} alt={"rune.name"} />
             </div>
         )
     }
@@ -50,13 +56,14 @@ export const RuneExplorer = () => {
     return (
         <div className="Runes">
             {Object.values(Slot).map(
-                (slot: string): JSX.Element => {
-                    const selectedValue = selectedRunesState.get(slot as Slot)
+                (slot: string) => {
+                    const selectedValue = selectedRunesState[slot as Slot]
+                    const slotRunes = classRunes.filter((element) => element.slot === slot)
                     return (
-                        selectedValue ?
-                            runeImage(selectedValue.getIcon())
-                            :
-                            defaultSlotImage(slot)
+                        <>
+                            { selectedValue ? runeImage(selectedValue) : defaultSlotImage(slot) }
+                            <RuneSelectMenu runes={slotRunes} selectedRune={selectedValue} slotImage={slot} />
+                        </>
                     );
                 }
             )}
