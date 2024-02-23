@@ -21,6 +21,8 @@ import warrior from "./classicon/warrior.png"
 // Ability Icons
 // Warrior
 import warbringer from "./abilityicon/warbringer.jpg"
+import ragingblow from "./abilityicon/ragingblow.jpg"
+import flagellation from "./abilityicon/flagellation.jpg"
 
 // Warlock
 import pandemic from "./abilityicon/pandemic.jpg"
@@ -46,6 +48,8 @@ export const images : {[key:string] : any} = {
     "./classicon/warlock.png": warlock,
     "./classicon/warrior.png": warrior,
     "./abilityicon/warbringer.jpg": warbringer,
+    "./abilityicon/ragingblow.jpg": ragingblow,
+    "./abilityicon/flagellation.jpg": flagellation,
     "./abilityicon/frostfire.jpg": frostfire,
     "./abilityicon/pandemic.jpg": pandemic,
 }

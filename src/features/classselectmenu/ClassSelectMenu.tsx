@@ -22,15 +22,14 @@ export const ClassSelectMenuRedux = () => {
   const renderClassButtons = () => {    
     return Object.values(PlayerClass).map((option) => (
       <button
+        className="button"
         key={option}
-        className={"image-button"}
         onClick={() => dispatch(selectClass(option))}
       >
 
         <img
           src={images[`./classicon/${option}.png`]}
           alt="Class Icon"
-          style={{ maxWidth: '64px', maxHeight: '64px' }}
         />
 
       </button>

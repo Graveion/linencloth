@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
 import { setShowDropdown, showDropdown } from "./RuneSelectMenuSlice";
 import { setSelectedRune } from "../runeexplorer/RuneExplorerSlice"
 
 import { Rune } from "../../types/Rune";
+import { images } from '../../img/images'
 
 import { selectSelectedOption } from "../dropdown/DropdownSlice";
 import Dropdown from "../dropdown/Dropdown";
@@ -17,11 +18,16 @@ interface RuneSelectMenuProps {
   slotImage: string
 }
 
-export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage }) => {
+export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedRune, slotImage }) => {
   const dispatch = useAppDispatch()
 
-  const dropdown = useAppSelector(showDropdown)
   const dropdownSelection = useAppSelector(selectSelectedOption)
+
+  const [dropdown, setDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdown((prevState) => !prevState);
+  };
 
   /**
    * Hide the drop down menu if click occurs
@@ -31,7 +37,7 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage
    */
   const dismissHandler = (event: React.FocusEvent<HTMLButtonElement>): void => {
     if (event.currentTarget === event.target) {
-      dispatch(setShowDropdown(false));
+       setDropdown(false)
     }
   };
 
@@ -40,24 +46,45 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, slotImage
     dispatch(setSelectedRune(dropdownSelection));
   }, [dropdownSelection, dispatch]);
 
+  const defaultSlotImage = (slot: string) => {
+    return (
+      <div key={slot}>
+        <img src={images[`./${slot}.jpg`]} alt={slot} />
+      </div>
+    )
+  }
+
+  const runeImage = (rune: Rune) => {
+    return (
+      <div key={rune.icon}>
+        <img src={images[`${rune.icon}`]} alt={"rune.name"} />
+      </div>
+    )
+  }
 
   return (
     <>
-      <button
-        className={dropdown ? "active" : undefined}
-        onClick={() => dispatch(setShowDropdown(!dropdown))}
-        onBlur={(e: React.FocusEvent<HTMLButtonElement>): void =>
-          dismissHandler(e)
-        }
-      >
-        <Dropdown
-          options={runes.map((rune: Rune) => {
-            return { id: rune.name, imgURI: rune.icon };
-          })}
+      <div className="displayImage">
+        { selectedRune ? runeImage(selectedRune) : defaultSlotImage(slotImage) }
+        <div className="wrapper">
+          <button
+            className={dropdown ? "button.active" : "button"}
+            onClick={toggleDropdown}
+            onBlur={(e: React.FocusEvent<HTMLButtonElement>): void =>
+              dismissHandler(e)
+            }
+          >
+            <Dropdown
+              key={slotImage}
+              options={runes.map((rune: Rune) => {
+                return { id: rune.name, imgURI: rune.icon };
+              })}
 
-          isVisible={dropdown}
-        />
-      </button>
+              isVisible={dropdown}
+            />
+          </button>
+        </div>
+      </div>
     </>
   );
 }

@@ -8,6 +8,22 @@
         "slot": "Chest"
     },
     {
+        "name": "Raging Blow",
+        "damageFormulas" : [],
+        "description" : "A ferocious strike that deals 80% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/ragingblow.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Flagellation",
+        "damageFormulas" : [],
+        "description" : "Gain a 25% bonus to Physical damage done for 12 sec after activating Bloodrage or Berserker Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/flagellation.jpg",
+        "slot": "Chest"
+    },
+    {
         "name": "Frostfire Bolt",
         "description" : "Launches a bolt of frostfire at the enemy, causing {0} to {1} Frostfire damage, slowing movement speed by 40% and causing an additional {2} Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
         "damageFormulas" : ["{level} * 25.8", "{level} * 30", "{level} * 2.4"],
