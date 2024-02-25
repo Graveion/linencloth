@@ -1,9 +1,11 @@
-import { useAppSelector } from "../../app/hooks"
+import { useAppSelector } from "../app/hooks"
 
-import { selectedRunes } from '../runeexplorer/RuneExplorerSlice';
-import RuneDescriptor from '../../components/RuneDescriptor'
+import { selectedRunes } from '../features/runeexplorer/RuneExplorerSlice';
+import RuneDescriptor from './RuneDescriptor'
 
 import './RuneList.css';
+
+// TODO: import level from state
 
 export const RuneList = () => {
 

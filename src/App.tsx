@@ -1,10 +1,8 @@
 import React from 'react';
 import ClassSelectButtons from "./features/classselectmenu/ClassSelectMenu"
 import RuneExplorer from "./features/runeexplorer/RuneExplorer";
-import RuneList from "./features/runelist/RuneList";
+import RuneList from "./components/RuneList";
 import './App.css';
-
-// todo: need to get selection from menu and use redux
 
 function App() {
   return (
