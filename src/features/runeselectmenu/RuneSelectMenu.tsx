@@ -57,7 +57,7 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedR
   const runeImage = (rune: Rune) => {
     return (
       <div key={rune.icon}>
-        <img src={images[`${rune.icon}`]} alt={"rune.name"} />
+        <img src={images[`${rune.icon}`]} alt={rune.name} />
       </div>
     )
   }

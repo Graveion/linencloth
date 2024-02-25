@@ -1,15 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import '../../components/Dropdown.css';
 import { Rune, calculateValues } from '../types/Rune';
+import { images } from '../img/images'
 
 interface RuneDescriptorProps {
     rune: Rune;
     level: number
 }
-
-const imagePrefix = "../../img/runeicon/"
 
 const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
     // todo: have values for power / level via class select
@@ -27,13 +25,16 @@ const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
 
         return runeDesc
     }
-
     return (
-        <div className={'descriptor'}>
-            <p>{substitutedDescription()}</p>
-            <img src={imagePrefix.concat(rune.icon)} alt="RuneIcon" />
+        <div className="item-row">
+            <img src={images[`${rune.icon}`]} alt="icon" className="icon" />
+            <div className="content">
+                <div className="name">{rune.name}</div>
+                <div className="description">{substitutedDescription()}</div>
+            </div>
         </div>
     );
+
 };
 
 export default RuneDescriptor;
