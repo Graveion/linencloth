@@ -1,34 +1,389 @@
 [
     {
+        "name": "Berserk",
+        "damageFormulas": [],
+        "description": "When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%. Lasts 15 sec. Requires Bear Form, Cat Form, or Dire Bear Form to activate.\n\nClears the effect of Fear and makes you immune to Fear for the duration.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/berserk.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Eclipse",
+        "damageFormulas": [],
+        "description": "Starfire increases the critical strike chance of your next two Wraths by 30%, and Wrath reduces the cast time of your next Starfire by 1.0 sec, both effects stacking up to 4 charges. Both spells also gain 70% chance at all times to not lose casting time when you take damage.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/eclipse.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Nourish",
+        "damageFormulas": [],
+        "description": "Heals a friendly target for 534 to 627. Heals for an additional 20% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target. This spell benefits from and triggers all effects associated with Healing Touch.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/nourish.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Dreamstate",
+        "damageFormulas": [],
+        "description": "Your damaging spell critical strikes grant you 50% of your mana regeneration while casting for 8 sec and increase Nature damage dealt to the target by 20% for 12 sec.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/dreamstate.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "King of the Jungle",
+        "damageFormulas": [],
+        "description": "Tiger's Fury now increases all physical damage you deal by 15% instead of by a flat value, and instantly grants you 60 Energy. It is no longer on the global cooldown, but it now has its own 30 sec cooldown.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/kingofthejungle.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Survival Instincts",
+        "damageFormulas": [],
+        "description": "When activated, this grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost. Useable in any form.\n\nIn addition, you regenerate 5 rage every time you dodge while in Bear Form or Dire Bear Form, 10 energy while in Cat Form, or 1% of your maximum mana while in any other form.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/survivalinstincts.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Expose Weakness",
+        "damageFormulas": [],
+        "description": "Your melee and ranged criticals increase your attack power by 40% of your current Agility for 7 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/exposeweakness.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Melee Specialist",
+        "damageFormulas": [],
+        "description": "Raptor Strike cooldown reduced to 3 sec and is now instant, Mongoose Bite cooldown removed, and Raptor Strike has a 30% chance on each attack not to trigger its cooldown.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/meleespecialist.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Steady Shot",
+        "damageFormulas": [],
+        "description": "A steady shot that causes 60% ranged weapon damage.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/steadyshot.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Dual Wield Specialization",
+        "damageFormulas": [],
+        "description": "Increases the damage done by your offhand weapon by 50%, causes your Raptor Strike to strike with both weapons when you are dual-wielding, and Raptor Strike deals 30% increased damage when you are wielding two weapons of the same type.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/dualwieldspecialization.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Invigoration",
+        "damageFormulas": [],
+        "description": "When your pet scores a critical hit with a special ability, you instantly regenerate 5% of your maximum mana.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/invigoration.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Trap Launcher",
+        "damageFormulas": [],
+        "description": "Your Traps can now be placed at any location within 35 yards, and can be placed while you are in combat. Additionally, your Fire-based and Frost-based traps now have separate shared cooldowns.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/traplauncher.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Frostfire Bolt",
+        "damageFormulas": [],
+        "description": "Launches a bolt of frostfire at the enemy, causing 220 to 256 Frostfire damage, slowing movement speed by 40% and causing an additional 20 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/frostfirebolt.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Hot Streak",
+        "damageFormulas": [],
+        "description": "Any time you score 2 non-periodic spell criticals in a row using Fireball, Fire Blast, Scorch, or Living Bomb, your next Pyroblast spell cast within 10 sec will be instant cast.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/hotstreak.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Missile Barrage",
+        "damageFormulas": [],
+        "description": "Gives your Arcane Blast a 40% chance, and your Fireball and Frostbolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the mana cost by 100%, and missiles will fire every 0.5 secs.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/missilebarrage.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Spellfrost Bolt",
+        "damageFormulas": [],
+        "description": "Launches a bolt of spellfrost at the enemy, causing 173 to 202 Spellfrost damage and slowing movement speed by 40% for 9 sec. This spell will be checked against the lower of the target's Frost and Arcane resists and counts as both Frost and Arcane damage.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/spellfrostbolt.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Brain Freeze",
+        "damageFormulas": [],
+        "description": "Your Frost damage spells with chilling effects have a 15% chance to cause your next Fireball, Spellfrost Bolt, or Frostfire Bolt spell to be instant cast and cost no mana.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/brainfreeze.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Chronostatic Preservation",
+        "damageFormulas": [],
+        "description": "Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to 15 sec before it combusts and expires. When unleashed, heals a friendly target for 665 to 998.\n\nThis spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/chronostaticpreservation.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Spell Power",
+        "damageFormulas": [],
+        "description": "Increases critical strike damage bonus of all spells by 50%.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/spellpower.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Frostfire Bolt",
+        "description": "Launches a bolt of frostfire at the enemy, causing {0} to {1} Frostfire damage, slowing movement speed by 40% and causing an additional {2} Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+        "damageFormulas": [
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 25.8)",
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 30",
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 0.24"
+        ],
+        "playerClass": "mage",
+        "icon": "./abilityicon/frostfire.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Enlightened Judgements",
+        "damageFormulas": [],
+        "description": "Increases the range on your Judgement by 30 yards and your spell hit with all spells by 17%.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/enlightenedjudgements.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Infusion of Light",
+        "damageFormulas": [],
+        "description": "Increases the damage done by your Holy Shock by 20%, and your damaging critical strikes with Holy Shock reset the cooldowns on Holy Shock and Exorcism and refund the cost of Holy Shock.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/infusionoflight.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Sheath of Light",
+        "damageFormulas": [],
+        "description": "Dealing damage with your melee weapon increases your spell power by an amount equal to 30% of your attack power for 1 min. In addition, your critical healing spells heal the target for 60% of the healed amount over 12 sec.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/sheathoflight.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Guarded by the Light",
+        "damageFormulas": [],
+        "description": "Each time you hit a target with your melee weapon, you gain 5% of your maximum mana per 3 sec for 15 sec, but the amount healed by your Flash of Light, Holy Light, and Holy Shock spells is reduced by 50% during this mana regeneration.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/guardedbythelight.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Sacred Shield",
+        "damageFormulas": [],
+        "description": "Each time the target takes damage they gain a Sacred Shield, absorbing 120 damage and increasing the Paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec. In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional 100% over 12 sec. They cannot gain this effect more than once every 6 sec. Lasts 30 sec. This spell cannot be on more than one target at any one time.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/sacredshield.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "The Art of War",
+        "damageFormulas": [],
+        "description": "Your melee critical strikes reset the cooldowns on Holy Shock and Exorcism, and the mana cost of Holy Shock and Exorcism is reduced by 80%.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/theartofwar.jpg",
+        "slot": "Feet"
+    },
+    {
         "name": "Warbringer",
-        "damageFormulas" : [],
-        "description" : "Stuff",
+        "damageFormulas": [],
+        "description": "Stuff",
         "playerClass": "warrior",
         "icon": "./abilityicon/warbringer.jpg",
         "slot": "Chest"
     },
     {
         "name": "Raging Blow",
-        "damageFormulas" : [],
-        "description" : "A ferocious strike that deals 80% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active.",
+        "damageFormulas": [],
+        "description": "A ferocious strike that deals 80% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active.",
         "playerClass": "warrior",
         "icon": "./abilityicon/ragingblow.jpg",
         "slot": "Chest"
     },
     {
         "name": "Flagellation",
-        "damageFormulas" : [],
-        "description" : "Gain a 25% bonus to Physical damage done for 12 sec after activating Bloodrage or Berserker Rage.",
+        "damageFormulas": [],
+        "description": "Gain a 25% bonus to Physical damage done for 12 sec after activating Bloodrage or Berserker Rage.",
         "playerClass": "warrior",
         "icon": "./abilityicon/flagellation.jpg",
         "slot": "Chest"
     },
     {
-        "name": "Frostfire Bolt",
-        "description" : "Launches a bolt of frostfire at the enemy, causing {0} to {1} Frostfire damage, slowing movement speed by 40% and causing an additional {2} Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
-        "damageFormulas" : ["{level} * 25.8", "{level} * 30", "{level} * 2.4"],
-        "playerClass": "mage",
-        "icon": "./abilityicon/frostfire.jpg",
+        "name": "Blood Frenzy",
+        "damageFormulas": [],
+        "description": "Each time you deal Bleed damage, you gain 3 Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/bloodfrenzy.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Demonic Tactics",
+        "damageFormulas": [],
+        "description": "Increases the melee and spell critical strike chance of you and your pet by 10%.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/demonictactics.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Lake of Fire",
+        "damageFormulas": [],
+        "description": "Rain of Fire also leaves a Lake of Fire on the ground that increases all Fire damage you deal and your Demon pet deals to affected enemies by 40% for 15 sec.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/lakeoffire.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Master Channeler",
+        "damageFormulas": [],
+        "description": "Your Drain Life is no longer channeled, lasts 15 sec with a 15 sec cooldown, costs 100% more mana, and heals you for 50% more each time it deals damage.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/masterchanneler.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Soul Siphon",
+        "damageFormulas": [],
+        "description": "Increases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Warlock Shadow effects afflicting the target, up to a maximum of 18% additional effect.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/soulsiphon.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Chaos Bolt",
+        "damageFormulas": [],
+        "description": "Sends a bolt of chaotic fire at the enemy, dealing 440 to 557 Fire damage. Chaos Bolt always hits, cannot be resisted, and its knowledge causes all your Fire spells to pierce through absorption effects. Chaos Bolt gains a high chance to be resisted when used against monsters 4 or more levels above your level.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/chaosbolt.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Haunt",
+        "damageFormulas": [],
+        "description": "Unleash a ghostly soul on an enemy, dealing 211 to 248 damage, and increasing all Shadow damage over time you deal to that target by 20%. When the Haunt ends or is dispelled, you will be healed for all the damage it dealt to your target.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/haunt.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Metamorphosis",
+        "damageFormulas": [],
+        "description": "Transform into a Demon, increasing Armor by 500%, reducing the chance you will be critically hit by 6%, increasing your threat by 50%, increasing mana gained from Life Tap by 100%, transforming the functionality of some of your abilities, and granting some new abilities.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/metamorphosis.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Shadow Bolt Volley",
+        "damageFormulas": [],
+        "description": "Your Shadow Bolt now strikes up to 5 targets within a chain distance of 10 yards, but for 20% reduced damage.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/shadowboltvolley.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Demonic Grace",
+        "damageFormulas": [],
+        "description": "Surge with fel energy, increasing your pet's and your own dodge chance by 30%, and your chance to critically strike with all attacks by 30%. Lasts 6 sec.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/demonicgrace.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Demonic Pact",
+        "damageFormulas": [],
+        "description": "Your pet's critical strikes apply the Demonic Pact effect to your party members for 45 sec. Demonic Pact increases spell damage and healing by 10% of your spell damage or (Level / 2), whichever is higher. Does not work on Subjugated demons.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/demonicpact.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Everlasting Affliction",
+        "damageFormulas": [],
+        "description": "Drain Life, Drain Soul, Shadowbolt, Shadow Cleave, Searing Pain, Incinerate, and Haunt refresh the duration of your Corruption on the target back to its maximum duration.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/everlastingaffliction.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Incinerate",
+        "damageFormulas": [],
+        "description": "Burn your enemy for 187 to 217 damage and increase all Fire damage you deal by 25% for the next 15 sec.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/incinerate.jpg",
+        "slot": "Legs"
+      },{
+        "name": "Grimoire of Synergy",
+        "damageFormulas": [],
+        "description": "Recite from a dark tome, granting damage done by you or your summoned demon a 5% chance to increase the damage done by the other by 5% for 15 sec. Recitation lasts 30 min.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/grimoireofsynergy.jpg",
         "slot": "Waist"
-    }
+      },
+      {
+        "name": "Invocation",
+        "damageFormulas": [],
+        "description": "Refreshing Corruption, Immolate, Curse of Agony, or Siphon Life when it has less than 6 seconds duration remaining will cause you to deal instant damage to the target equal to the spell's remaining periodic damage.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/invocation.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Shadow and Flame",
+        "damageFormulas": [],
+        "description": "Your critical strikes with Fire and Shadow spells increase your Fire and Shadow damage done by 10% for 10 sec.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/shadowandflame.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Dance of the Wicked",
+        "damageFormulas": [],
+        "description": "You and your demon pet gain dodge chance equal to your spell critical strike chance each time you deal a critical strike to an enemy, and also both regain 2% of maximum mana.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/danceofthewicked.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Demonic Knowledge",
+        "damageFormulas": [],
+        "description": "Increases your spell damage and healing by a value equal to 10% of your Demon pet's total Stamina plus Intellect.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/demonicknowledge.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Shadowflame",
+        "damageFormulas": [],
+        "description": "Targets in a cone in front of the caster take 54 Shadow damage and an additional 81 Fire damage over 8 sec. This effect can be consumed with Conflagrate.",
+        "playerClass": "warlock",
+        "icon": "./abilityicon/shadowflame.jpg",
+        "slot": "Feet"
+      }
 ]

@@ -22,12 +22,13 @@ export const ClassSelectMenuRedux = () => {
   const renderClassButtons = () => {    
     return Object.values(PlayerClass).map((option) => (
       <button
-        className="button"
+        className={option === selectedOption ? 'button-selected' : 'button'}
         key={option}
         onClick={() => dispatch(selectClass(option))}
       >
 
         <img
+          className="image"
           src={images[`./classicon/${option}.png`]}
           alt="Class Icon"
         />
@@ -39,7 +40,7 @@ export const ClassSelectMenuRedux = () => {
 
   return (
     <div>
-      <h2>Select a class:</h2>
+      <h2>Select a class: {selectedOption}</h2>
       { renderClassButtons() }
     </div>
   );

@@ -10,10 +10,8 @@ export enum Slot {
     Chest = 'Chest',
     Feet = "Feet",
     Hands = "Hands",
-    Head = "Head",
     Legs = "Legs",
     Waist = "Waist",
-    Wrist = "Wrist",
 }
 
 export const RuneExplorer = () => {
