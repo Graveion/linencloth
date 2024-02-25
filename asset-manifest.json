@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/linencloth/static/css/main.7e0cc164.css",
+    "main.css": "/linencloth/static/css/main.c22b04c2.css",
     "main.js": "/linencloth/static/js/main.31d07236.js",
     "static/js/453.56f46472.chunk.js": "/linencloth/static/js/453.56f46472.chunk.js",
     "static/media/Feet.jpg": "/linencloth/static/media/Feet.e7426dc2ffe33c9b7b60.jpg",
@@ -11,12 +11,12 @@
     "static/media/Legs.jpg": "/linencloth/static/media/Legs.9c379be3ab4286689fd0.jpg",
     "static/media/Waist.jpg": "/linencloth/static/media/Waist.e8a7774863735c08eb24.jpg",
     "index.html": "/linencloth/index.html",
-    "main.7e0cc164.css.map": "/linencloth/static/css/main.7e0cc164.css.map",
+    "main.c22b04c2.css.map": "/linencloth/static/css/main.c22b04c2.css.map",
     "main.31d07236.js.map": "/linencloth/static/js/main.31d07236.js.map",
     "453.56f46472.chunk.js.map": "/linencloth/static/js/453.56f46472.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e0cc164.css",
+    "static/css/main.c22b04c2.css",
     "static/js/main.31d07236.js"
   ]
 }
