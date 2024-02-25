@@ -16,11 +16,12 @@ export interface Rune {
     name: string;
 }
 
-export function calculateValues(level: number, damageFormulas: string[]): number[] {
+export function calculateValues(level: number = 40, power: number = 0, damageFormulas: string[]): number[] {
     return damageFormulas.map(
         (formula: string, index: number): number => {
-            const substitutedExpression: string = formula.replace('{level}', level.toString());
-
+            const substitutedExpression: string = formula.replaceAll('{level}', level.toString());
+            substitutedExpression.replaceAll('{power}', power.toString())
+            
             try {
                 return math.evaluate(substitutedExpression);
             } catch (error) {

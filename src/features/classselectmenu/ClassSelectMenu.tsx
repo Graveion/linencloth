@@ -40,10 +40,14 @@ export const ClassSelectMenuRedux = () => {
 
   return (
     <div>
-      <h2>Select a class: {selectedOption}</h2>
+      <h2>{capitalise(selectedOption)}</h2>
       { renderClassButtons() }
     </div>
   );
+}
+
+function capitalise(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 export default ClassSelectMenuRedux

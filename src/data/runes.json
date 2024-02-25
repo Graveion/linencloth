@@ -385,5 +385,453 @@
         "playerClass": "warlock",
         "icon": "./abilityicon/shadowflame.jpg",
         "slot": "Feet"
-      }
+      },{
+        "name": "Dual Wield Specialization",
+        "damageFormulas": [],
+        "description": "Increases your chance to hit with both spells and melee attacks by 10% while dual wielding and your Stormstrike ability now hits with both weapons while dual wielding.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/dualwieldspecialization.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Healing Rain",
+        "damageFormulas": [],
+        "description": "Selects the area 15 yards around target player, and heals all of target player's party members within that area for 41 every second.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/healingrain.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Overload",
+        "damageFormulas": [],
+        "description": "Gives your Lightning Bolt, Chain Lightning, Chain Heal, Healing Wave, and Lava Burst spells a 50% chance to cast a second, similar spell on the same target at no additional cost that causes half damage or healing and no threat.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/overload.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Shield Mastery",
+        "damageFormulas": [],
+        "description": "Each time you Block, you regenerate mana equal to 8% of your maximum mana and you gain Armor equal to 30% of your shield's armor value, stacking up to 5 times. You also always gain 10% increased chance to Block and 15% increased Block value.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/shieldmastery.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Two-Handed Mastery",
+        "damageFormulas": [],
+        "description": "Each time you strike an enemy with a two-handed weapon, you gain 30% attack speed with two-handed weapons for 10 sec.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/twohandedmastery.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Lava Burst",
+        "damageFormulas": [],
+        "description": "You hurl molten lava at the target, dealing 399 to 514 Fire damage. If your Flame Shock is on the target, Lava Burst will deal a critical strike.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/lavaburst.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Lava Lash",
+        "damageFormulas": [],
+        "description": "You charge your off-hand weapon with lava, instantly dealing 150% off-hand Weapon damage. Damage is increased by 20% if your off-hand weapon is enchanted with Flametongue.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/lavalash.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Molten Blast",
+        "damageFormulas": [
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 72 / 100 + 5 / 100",
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 108 / 100 + 5 / 100"
+        ],
+        "description": "Blast up to 4 enemies in a cone in front of you for (7.583798 + 0.471881 * 40 + 0.036599 * 40 * 40) * 72 / 100 + 5 / 100 * to (7.583798 + 0.471881 * 40 + 0.036599 * 40 * 40) * 108 / 100 + 5 / 100 * Fire damage. This ability generates a high amount of threat. Flame Shock periodic damage has a 10% chance to reset the cooldown on Molten Blast.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/moltenblast.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Water Shield",
+        "damageFormulas": [],
+        "description": "The caster is surrounded by 3 globes of water, granting 1% of your maximum mana per 5 sec. When a spell, melee or ranged attack hits the caster, 4% of maximum mana is restored to the caster. This expends one water globe. Only one globe will activate every few seconds. Lasts 10 min. Only one Elemental Shield can be active on the Shaman at any one time.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/watershield.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Ancestral Guidance",
+        "damageFormulas": [],
+        "description": "For the next 10 sec, 25% of your damage is converted to healing on up to 3 nearby party members, and 100% of your healing is converted to damage on your most recent Flame Shock target.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/ancestralguidance.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Earth Shield",
+        "damageFormulas": [],
+        "description": "Protects the target with an earthen shield, reducing casting or channeling time lost when damaged by 30% and causing attacks to heal the shielded target for 100. This effect can only occur once every few seconds. 3 charges. Lasts 10 min. Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/earthshield.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Shamanistic Rage",
+        "damageFormulas": [],
+        "description": "Reduces all damage you take by 20% and you regenerate mana every second for 15 sec. Mana regenerated per second is equal to 15% of your Attack Power, 10% of your spell power, or 6% of your healing power, whichever value is greatest. Your party and raid members within 40 yards will also receive 20% of the mana you receive this way.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/shamanisticrage.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Way of Earth",
+        "damageFormulas": [],
+        "description": "While Rockbiter Weapon is active on your main hand weapon, you deal 50% increased threat, gain 30% increased health, take 10% reduced damage, gain 6% reduced chance to be critically hit by melee attacks, and Earth Shock taunts targets to attack you and has a separate cooldown from other Shock spells but has its range reduced to melee range.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/wayofearth.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Fire Nova",
+        "damageFormulas": [],
+        "description": "Gain the Fire Nova ability, replacing your Fire Nova Totem: Your Fire Nova Totem spell is replaced with Fire Nova, which causes your current Fire totem to emit damage at its location.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/firenova.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Maelstrom Weapon",
+        "damageFormulas": [],
+        "description": "When you deal damage with a melee attack, you have a chance to reduce the cast time and mana cost of your next Lightning Bolt, Chain Lightning, Lesser Healing Wave, Healing Wave, Chain Heal, or Lava Burst spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/maelstromweapon.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Power Surge",
+        "damageFormulas": [],
+        "description": "Each time Flame Shock deals damage, it has a 5% chance to reset the cooldown on Lava Burst and Chain Lightning and make the next Lava Burst, Chain Heal, or Chain Lightning within 10 sec instant. Additionally, you regenerate mana equal to 15% of your Intellect every 5 sec.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/powersurge.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Ancestral Awakening",
+        "damageFormulas": [],
+        "description": "When you critically heal with your Healing Wave or Lesser Healing Wave you summon an Ancestral spirit to aid you, instantly healing the lowest percentage health party member within 40 yards for 30% of the amount healed.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/ancestralawakening.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Decoy Totem",
+        "damageFormulas": [],
+        "description": "Summons a Decoy Totem for 10 sec with 5 health at the feet of the target that will redirect the next melee or ranged attack made against the target to the totem instead. The totem also grants the target immunity to movement impairing effects for 10 sec.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/decoytotem.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Spirit of the Alpha",
+        "damageFormulas": [],
+        "description": "Infuses the target with the spirit of an alpha wolf, increasing all threat generated by the target by 45% for 30 min. Limit 1 target.",
+        "playerClass": "shaman",
+        "icon": "./abilityicon/spiritofthealpha.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Deadly Brew",
+        "damageFormulas": [],
+        "description": "Grants several improvements to your poisons:\n\n- When you inflict any other poison on a target, you also inflict Deadly Poison.\n- If your weapon does not have a poison applied, it has a chance to trigger Instant Poison as if Instant Poison were applied.\n- Deadly Poison and Instant Poison now gain increased damage from your Attack Power.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/deadlybrew.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Just a Flesh Wound",
+        "damageFormulas": [],
+        "description": "You take 20% reduced Physical damage while Blade Dance is active. Additionally, you have 6% reduced chance to be critically hit by melee attacks, the threat generated by all your actions is massively increased, and your Feint ability is replaced with Tease, which Taunts the target to attack you. Taunts the target to attack you, but has no effect if the target is already attacking you.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/justafleshwound.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Quick Draw",
+        "damageFormulas": [],
+        "description": "Draw your ranged weapon and fire a quick shot at an enemy, causing normal ranged weapon damage and reducing the target's movement speed by 50% for 6 sec. Awards 1 combo point. Quick Draw benefits from all talents and effects that trigger from or modify Sinister Strike.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/quickdraw.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Slaughter from the Shadows",
+        "damageFormulas": [],
+        "description": "Reduces the Energy cost of your Backstab and Ambush abilities by 20. Engrave Gloves - Mutilate. Does not apply to Mutilate. Does not apply to abilities learned from other runes.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/slaughterfromtheshadows.jpg",
+        "slot": "Chest"
+      },
+      {
+        "name": "Main Gauche",
+        "damageFormulas": [],
+        "description": "Instantly strike with your off-hand weapon for normal off-hand weapon damage and increase your chance to parry by 10% for 10 sec. Awards 1 combo point. Main Gauche benefits from all talents and effects that trigger from or modify Sinister Strike.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/maingauche.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Mutilate",
+        "damageFormulas": [],
+        "description": "Instantly attacks with both weapons for 100% weapon damage plus an additional 48 with each weapon. Damage is increased by 20% against Poisoned targets. Awards 2 combo points. Mutilate benefits from all talents and effects that trigger from or modify Backstab unless otherwise specified.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/mutilate.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Saber Slash",
+        "damageFormulas": [],
+        "description": "Viciously slash an enemy for 100% weapon damage, and cause the target to bleed for (Attack power * 5 / 100) damage every 2 sec for 12 sec, stacking up to 3 times. Awards 1 combo point. Saber Slash benefits from all talents and effects that trigger from or modify Sinister Strike.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/saberslash.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Shadowstrike",
+        "damageFormulas": [],
+        "description": "Teleport behind your target and strike, causing 150% weapon damage to the target. Must be stealthed. Awards 1 combo point.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/shadowstrike.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Shiv",
+        "damageFormulas": [],
+        "description": "Instantly attack with your off-hand weapon to deal normal off-hand weapon damage with a 100% chance to apply the poison from your off-hand weapon to the target. Slower weapons require more energy. Awards 1 combo point. Shiv benefits from all talents and effects that trigger from or modify Sinister Strike.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/shiv.jpg",
+        "slot": "Hands"
+      },
+      {
+        "name": "Between the Eyes",
+        "damageFormulas": [],
+        "description": "Ranged Finishing move that causes damage per combo point, increased by Attack Power, and Stuns the target: 1 point: 65 to 100 damage, 1 sec Stun 2 points: 105 to 161 damage, 2 sec Stun 3 points: 145 to 222 damage, 3 sec Stun 4 points: 185 to 283 damage, 4 sec Stun 5 points: 225 to 344 damage, 5 sec Stun Cooldown shared with Kidney Shot.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/betweentheeyes.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Blade Dance",
+        "damageFormulas": [],
+        "description": "Finishing move that increases your Parry chance by 10%. Lasts longer per combo point: 1 point : 14 seconds 2 points: 18 seconds 3 points: 22 seconds 4 points: 26 seconds 5 points: 30 seconds",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/bladedance.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Envenom",
+        "damageFormulas": [
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 1 + {AP} * 0.09",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 2 + {AP} * 0.18",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 3 + {AP} * 0.27",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 4 + {AP} * 0.36",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 5 + {AP} * 0.45"
+        ],
+        "description": "Finishing move that deals instant poison damage based on your Deadly Poison doses on the target. Following the Envenom attack you have a 75% increased frequency of applying Instant Poison for 1 sec plus an additional 1 sec per combo point. One dose is activated per combo point: 1 dose: {0} damage 2 doses: {1} damage 3 doses: {2} damage 4 doses: {3} damage 5 doses: {4} damage",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/envenom.jpg",
+        "slot": "Legs"
+      },
+      {
+        "name": "Poisoned Knife",
+        "damageFormulas": [],
+        "description": "Instantly throw your off-hand weapon to deal normal off-hand weapon damage with a 100% chance to apply the poison from your off-hand weapon to the target. Awards 1 combo point. Poisoned Knife benefits from all talents and effects that trigger from or modify Sinister Strike.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/poisonedknife.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Shadowstep",
+        "damageFormulas": [],
+        "description": "Attempts to step through the shadows and reappear behind your enemy and increases movement speed by 70% for 3 sec.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/shadowstep.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Shuriken Toss",
+        "damageFormulas": [],
+        "description": "Throw a shuriken at your enemy dealing damage equal to 15% of your Attack Power, and also strike up to 4 additional nearby targets. Awards 1 combo point.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/shurikentoss.jpg",
+        "slot": "Waist"
+      },
+      {
+        "name": "Master of Subtlety",
+        "damageFormulas": [],
+        "description": "Attacks made while stealthed and for 6 seconds after breaking stealth cause an additional 10% damage.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/masterofsubtlety.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Rolling with the Punches",
+        "damageFormulas": [],
+        "description": "Each time you Dodge or Parry, you gain 6% increased Health, stacking up to 5 times.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/rollingwiththepunches.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Waylay",
+        "damageFormulas": [],
+        "description": "Your Ambush and Backstab hits unbalance your target, increasing the time between their melee attacks by 10%, and reducing movement speed by 50% for 8 sec.",
+        "playerClass": "rogue",
+        "icon": "./abilityicon/waylay.jpg",
+        "slot": "Feet"
+      },
+      {
+        "name": "Serendipity",
+        "damageFormulas": [],
+        "description": "Healing with Flash Heal reduces the cast time of your next Lesser Heal, Heal, Greater Heal, or Prayer of Healing by 20% for 20 sec, stacking up to 3 times.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/serendipity.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Strength of Soul",
+        "damageFormulas": [],
+        "description": "Lesser Heal, Heal, Greater Heal, and Flash Heal reduce the remaining duration of Weakened Soul on targets they heal by 4 sec. In addition, targets of your Power Word: Shield will gain Rage from taking damage despite the damage being absorbed, and Righteous Fury will trigger from damage absorbed by your Power Word: Shield as if it were a heal.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/strengthofsoul.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Twisted Faith",
+        "damageFormulas": [],
+        "description": "Mind Flay and Mind Blast deal 50% increased damage to targets afflicted with your Shadow Word: Pain.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/twistedfaith.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Void Plague",
+        "damageFormulas": [],
+        "description": "Afflicts the target with a disease that causes 683 Shadow damage over 18 sec.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/voidplague.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Circle of Healing",
+        "damageFormulas": [],
+        "description": "Heals all of target player's party members within 40 yards of target player for 432 to 479.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/circleofhealing.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Mind Sear",
+        "damageFormulas": [],
+        "description": "Causes an explosion of shadow magic around the enemy target, causing 68 to 76 Shadow damage every 1 sec for 5 sec to all enemies within 10 yards around the target.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/mindsear.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Penance",
+        "damageFormulas": [],
+        "description": "Launches a volley of holy light at the target, causing 125 Holy damage to an enemy, or 283 healing to an ally, instantly and every 1 sec for 2 sec.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/penance.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Shadow Word: Death",
+        "damageFormulas": [],
+        "description": "A word of dark binding that inflicts 518 to 604 Shadow damage to the target. If the target is not killed by Shadow Word: Death, the caster takes damage equal to 50% of the damage inflicted upon the target.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/shadowworddeath.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Homunculi",
+        "damageFormulas": [],
+        "description": "Break off splinters of your soul to animate 3 miniature copies of yourself that attempt to attack your current target with a mace, sword, and axe, reducing the attack speed, attack power, and armor respectively of any target they hit.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/homunculi.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Power Word: Barrier",
+        "damageFormulas": [],
+        "description": "Summons a holy barrier to protect all party members at the target location for 10 sec, reducing all damage taken by 25% and preventing damage from delaying spellcasting.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/powerwordbarrier.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Prayer of Mending",
+        "damageFormulas": [],
+        "description": "Places a spell on the target that heals them for 246 the next time they take damage or receive healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/prayerofmending.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Shared Pain",
+        "damageFormulas": [],
+        "description": "Your Shadow Word: Pain now also afflicts up to 2 additional nearby targets within 15 yards.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/sharedpain.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Empowered Renew",
+        "damageFormulas": [],
+        "description": "Your Renew now heals one extra time immediately when applied, and gains 15% increased benefit each time it heals from your bonus healing effects. In addition, your Renew can now be active on targets affected by another Priest's Renew.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/empoweredrenew.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Mind Spike",
+        "damageFormulas": [],
+        "description": "Blasts the target for 108 to 126 Shadowfrost damage, and increases the critical strike chance of your next Mind Blast on the target by 30%, stacking up to 3 times.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/mindspike.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Renewed Hope",
+        "damageFormulas": [],
+        "description": "Your heals from Flash Heal, Lesser Heal, Heal, Greater Heal, and Penance have 10% increased critical effect chance when cast on targets with Weakened Soul.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/renewedhope.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Dispersion",
+        "damageFormulas": [],
+        "description": "You disperse into pure Shadow energy, reducing all damage taken by 90%. You are unable to attack or cast spells, but you regenerate 6% mana every 1 sec for 6 sec. Dispersion can be cast while stunned, feared or silenced and clears all snare and movement impairing effects when cast, and makes you immune to them while dispersed.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/dispersion.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Pain Suppression",
+        "damageFormulas": [],
+        "description": "Instantly reduces all damage taken by a friendly target by 40% and increases resistance to Dispel mechanics by 65% for 8 sec.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/painsuppression.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Spirit of the Redeemer",
+        "damageFormulas": [],
+        "description": "Activate to become the Spirit of Redemption for 10 sec. While in this form, you can cast any healing spell free of cost, but you cannot move, attack, be attacked, or be targeted by any spells or effects. Requires Spirit of Redemption talent to activate, and you will no longer enter Spirit of Redemption upon dying.",
+        "playerClass": "priest",
+        "icon": "./abilityicon/spiritoftheredeemer.jpg",
+        "slot": "Feet"
+    }
 ]

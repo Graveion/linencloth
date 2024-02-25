@@ -12,17 +12,13 @@ interface RuneDescriptorProps {
 const imagePrefix = "../../img/runeicon/"
 
 const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
-    
-    // take rune description
-    // get calculated formulas from array, substituting level for level scaling
-    // then map over that to then replace rune description
-    // {0} -> formulas[0]
+    // todo: have values for power / level via class select
+    // then import in the seelctor - have the state at a higher level like where the Header is for laughs
 
-    // todo: lookup how to interpolate string?
     const substitutedDescription = () => {
         const runeDesc = rune.description
 
-        calculateValues(level, rune.damageFormulas).map(
+        calculateValues(level, 0, rune.damageFormulas).map(
             (value: number, index: number) => {
                 const indexString = "{" + index.toString() + "}"
                 runeDesc.replace(indexString, value.toString());
