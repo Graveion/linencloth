@@ -20,10 +20,25 @@ import warrior from "./classicon/warrior.png"
 
 // Ability Icons
 // Warrior
-import warbringer from "./abilityicon/warbringer.jpg"
-import ragingblow from "./abilityicon/ragingblow.jpg"
-import flagellation from "./abilityicon/flagellation.jpg"
-import bloodfrenzy from "./abilityicon/bloodfrenzy.jpg"
+import bloodfrenzy from "./abilityicon/bloodfrenzy.jpg";
+import flagellation from "./abilityicon/flagellation.jpg";
+import ragingblow from "./abilityicon/ragingblow.jpg";
+import warbringer from "./abilityicon/warbringer.jpg";
+import devastate from "./abilityicon/devastate.jpg";
+import endlessrage from "./abilityicon/endlessrage.jpg";
+import quickstrike from "./abilityicon/quickstrike.jpg";
+import singlemindedfury from "./abilityicon/singlemindedfury.jpg";
+import victoryrush from "./abilityicon/victoryrush.jpg";
+import consumedbyrage from "./abilityicon/consumedbyrage.jpg";
+import frenziedassault from "./abilityicon/frenziedassault.jpg";
+import furiousthunder from "./abilityicon/furiousthunder.jpg";
+import bloodsurge from "./abilityicon/bloodsurge.jpg";
+import focusedrage from "./abilityicon/focusedrage.jpg";
+import precisetiming from "./abilityicon/precisetiming.jpg";
+import enragedregeneration from "./abilityicon/enragedregeneration.jpg";
+import intervene from "./abilityicon/intervene.jpg";
+import rallyingcry from "./abilityicon/rallyingcry.jpg";
+
 
 // Warlock
 import demonictactics from "./abilityicon/demonictactics.jpg";
@@ -106,8 +121,86 @@ import dispersion from "./abilityicon/dispersion.jpg";
 import painsuppression from "./abilityicon/painsuppression.jpg";
 import spiritoftheredeemer from "./abilityicon/spiritoftheredeemer.jpg";
 
+// Paladin
+import aegis from "./abilityicon/aegis.jpg";
+import divinestorm from "./abilityicon/divinestorm.jpg";
+import hornoflordaeron from "./abilityicon/hornoflordaeron.jpg";
+import sealofmartyrdom from "./abilityicon/sealofmartyrdom.jpg";
+import beaconoflight from "./abilityicon/beaconoflight.jpg";
+import crusaderstrike from "./abilityicon/crusaderstrike.jpg";
+import handofreckoning from "./abilityicon/handofreckoning.jpg";
+import avengersshield from "./abilityicon/avengersshield.jpg";
+import divinesacrifice from "./abilityicon/divinesacrifice.jpg";
+import exorcist from "./abilityicon/exorcist.jpg";
+import inspirationexemplar from "./abilityicon/inspirationexemplar.jpg";
+import rebuke from "./abilityicon/rebuke.jpg";
+import enlightenedjudgements from "./abilityicon/enlightenedjudgements.jpg";
+import infusionoflight from "./abilityicon/infusionoflight.jpg";
+import sheathoflight from "./abilityicon/sheathoflight.jpg";
+import guardedbythelight from "./abilityicon/guardedbythelight.jpg";
+import sacredshield from "./abilityicon/sacredshield.jpg";
+import theartofwar from "./abilityicon/theartofwar.jpg";
+
 // Mage
-import frostfire from "./abilityicon/frostfire.jpg"
+import burnout from "./abilityicon/burnout.jpg";
+import enlightenment from "./abilityicon/enlightenment.jpg";
+import fingersoffrost from "./abilityicon/fingersoffrost.jpg";
+import regeneration from "./abilityicon/regeneration.jpg";
+import arcaneblast from "./abilityicon/arcaneblast.jpg";
+import icelance from "./abilityicon/icelance.jpg";
+import livingbomb from "./abilityicon/livingbomb.jpg";
+import rewindtime from "./abilityicon/rewindtime.jpg";
+import arcanesurge from "./abilityicon/arcanesurge.jpg";
+import icyveins from "./abilityicon/icyveins.jpg";
+import livingflame from "./abilityicon/livingflame.jpg";
+import massregeneration from "./abilityicon/massregeneration.jpg";
+import frostfirebolt from "./abilityicon/frostfirebolt.jpg";
+import hotstreak from "./abilityicon/hotstreak.jpg";
+import missilebarrage from "./abilityicon/missilebarrage.jpg";
+import spellfrostbolt from "./abilityicon/spellfrostbolt.jpg";
+import brainfreeze from "./abilityicon/brainfreeze.jpg";
+import chronostaticpreservation from "./abilityicon/chronostaticpreservation.jpg";
+import spellpower from "./abilityicon/spellpower.jpg";
+
+// Hunter
+import cobrastrikes from "./abilityicon/cobrastrikes.jpg";
+import heartofthelion from "./abilityicon/heartofthelion.jpg";
+import lonewolf from "./abilityicon/lonewolf.jpg";
+import mastermarksman from "./abilityicon/mastermarksman.jpg";
+import beastmastery from "./abilityicon/beastmastery.jpg";
+import carve from "./abilityicon/carve.jpg";
+import chimerashot from "./abilityicon/chimerashot.jpg";
+import explosiveshot from "./abilityicon/explosiveshot.jpg";
+import flankingstrike from "./abilityicon/flankingstrike.jpg";
+import killcommand from "./abilityicon/killcommand.jpg";
+import serpentspread from "./abilityicon/serpentspread.jpg";
+import snipertraining from "./abilityicon/snipertraining.jpg";
+import exposeweakness from "./abilityicon/exposeweakness.jpg";
+import meleespecialist from "./abilityicon/meleespecialist.jpg";
+import steadyshot from "./abilityicon/steadyshot.jpg";
+import invigoration from "./abilityicon/invigoration.jpg";
+import traplauncher from "./abilityicon/traplauncher.jpg";
+
+// Druid
+import furyofstormrage from "./abilityicon/furyofstormrage.jpg";
+import livingseed from "./abilityicon/livingseed.jpg";
+import survivalofthefittest from "./abilityicon/survivalofthefittest.jpg";
+import wildstrikes from "./abilityicon/wildstrikes.jpg";
+import lacerate from "./abilityicon/lacerate.jpg";
+import mangle from "./abilityicon/mangle.jpg";
+import sunfire from "./abilityicon/sunfire.jpg";
+import wildgrowth from "./abilityicon/wildgrowth.jpg";
+import lifebloom from "./abilityicon/lifebloom.jpg";
+import savageroar from "./abilityicon/savageroar.jpg";
+import skullbash from "./abilityicon/skullbash.jpg";
+import starsurge from "./abilityicon/starsurge.jpg";
+import berserk from "./abilityicon/berserk.jpg";
+import eclipse from "./abilityicon/eclipse.jpg";
+import nourish from "./abilityicon/nourish.jpg";
+import dreamstate from "./abilityicon/dreamstate.jpg";
+import kingofthejungle from "./abilityicon/kingofthejungle.jpg";
+import survivalinstincts from "./abilityicon/survivalinstincts.jpg";
+
 
 export const images: { [key: string]: any } = {
     "./Chest.jpg": chest,
@@ -126,11 +219,6 @@ export const images: { [key: string]: any } = {
     "./classicon/shaman.png": shaman,
     "./classicon/warlock.png": warlock,
     "./classicon/warrior.png": warrior,
-    "./abilityicon/warbringer.jpg": warbringer,
-    "./abilityicon/ragingblow.jpg": ragingblow,
-    "./abilityicon/bloodfrenzy.jpg": bloodfrenzy,
-    "./abilityicon/flagellation.jpg": flagellation,
-    "./abilityicon/frostfire.jpg": frostfire,
     "./abilityicon/demonictactics.jpg": demonictactics,
     "./abilityicon/lakeoffire.jpg": lakeoffire,
     "./abilityicon/masterchanneler.jpg": masterchanneler,
@@ -203,5 +291,95 @@ export const images: { [key: string]: any } = {
     "./abilityicon/renewedhope.jpg": renewedhope,
     "./abilityicon/dispersion.jpg": dispersion,
     "./abilityicon/painsuppression.jpg": painsuppression,
-    "./abilityicon/spiritoftheredeemer.jpg": spiritoftheredeemer
+    "./abilityicon/spiritoftheredeemer.jpg": spiritoftheredeemer,
+    "./abilityicon/aegis.jpg": aegis,
+    "./abilityicon/divinestorm.jpg": divinestorm,
+    "./abilityicon/hornoflordaeron.jpg": hornoflordaeron,
+    "./abilityicon/sealofmartyrdom.jpg": sealofmartyrdom,
+    "./abilityicon/beaconoflight.jpg": beaconoflight,
+    "./abilityicon/crusaderstrike.jpg": crusaderstrike,
+    "./abilityicon/handofreckoning.jpg": handofreckoning,
+    "./abilityicon/avengersshield.jpg": avengersshield,
+    "./abilityicon/divinesacrifice.jpg": divinesacrifice,
+    "./abilityicon/exorcist.jpg": exorcist,
+    "./abilityicon/inspirationexemplar.jpg": inspirationexemplar,
+    "./abilityicon/rebuke.jpg": rebuke,
+    "./abilityicon/enlightenedjudgements.jpg": enlightenedjudgements,
+    "./abilityicon/infusionoflight.jpg": infusionoflight,
+    "./abilityicon/sheathoflight.jpg": sheathoflight,
+    "./abilityicon/guardedbythelight.jpg": guardedbythelight,
+    "./abilityicon/sacredshield.jpg": sacredshield,
+    "./abilityicon/theartofwar.jpg": theartofwar,
+    "./abilityicon/bloodfrenzy.jpg": bloodfrenzy,
+    "./abilityicon/flagellation.jpg": flagellation,
+    "./abilityicon/ragingblow.jpg": ragingblow,
+    "./abilityicon/warbringer.jpg": warbringer,
+    "./abilityicon/devastate.jpg": devastate,
+    "./abilityicon/endlessrage.jpg": endlessrage,
+    "./abilityicon/quickstrike.jpg": quickstrike,
+    "./abilityicon/singlemindedfury.jpg": singlemindedfury,
+    "./abilityicon/victoryrush.jpg": victoryrush,
+    "./abilityicon/consumedbyrage.jpg": consumedbyrage,
+    "./abilityicon/frenziedassault.jpg": frenziedassault,
+    "./abilityicon/furiousthunder.jpg": furiousthunder,
+    "./abilityicon/bloodsurge.jpg": bloodsurge,
+    "./abilityicon/focusedrage.jpg": focusedrage,
+    "./abilityicon/precisetiming.jpg": precisetiming,
+    "./abilityicon/enragedregeneration.jpg": enragedregeneration,
+    "./abilityicon/intervene.jpg": intervene,
+    "./abilityicon/rallyingcry.jpg": rallyingcry,
+    "./abilityicon/burnout.jpg": burnout,
+    "./abilityicon/enlightenment.jpg": enlightenment,
+    "./abilityicon/fingersoffrost.jpg": fingersoffrost,
+    "./abilityicon/regeneration.jpg": regeneration,
+    "./abilityicon/arcaneblast.jpg": arcaneblast,
+    "./abilityicon/icelance.jpg": icelance,
+    "./abilityicon/livingbomb.jpg": livingbomb,
+    "./abilityicon/rewindtime.jpg": rewindtime,
+    "./abilityicon/arcanesurge.jpg": arcanesurge,
+    "./abilityicon/icyveins.jpg": icyveins,
+    "./abilityicon/livingflame.jpg": livingflame,
+    "./abilityicon/massregeneration.jpg": massregeneration,
+    "./abilityicon/frostfirebolt.jpg": frostfirebolt,
+    "./abilityicon/hotstreak.jpg": hotstreak,
+    "./abilityicon/missilebarrage.jpg": missilebarrage,
+    "./abilityicon/spellfrostbolt.jpg": spellfrostbolt,
+    "./abilityicon/brainfreeze.jpg": brainfreeze,
+    "./abilityicon/chronostaticpreservation.jpg": chronostaticpreservation,
+    "./abilityicon/spellpower.jpg": spellpower,
+    "./abilityicon/cobrastrikes.jpg": cobrastrikes,
+    "./abilityicon/heartofthelion.jpg": heartofthelion,
+    "./abilityicon/lonewolf.jpg": lonewolf,
+    "./abilityicon/mastermarksman.jpg": mastermarksman,
+    "./abilityicon/beastmastery.jpg": beastmastery,
+    "./abilityicon/carve.jpg": carve,
+    "./abilityicon/chimerashot.jpg": chimerashot,
+    "./abilityicon/explosiveshot.jpg": explosiveshot,
+    "./abilityicon/flankingstrike.jpg": flankingstrike,
+    "./abilityicon/killcommand.jpg": killcommand,
+    "./abilityicon/serpentspread.jpg": serpentspread,
+    "./abilityicon/snipertraining.jpg": snipertraining,
+    "./abilityicon/exposeweakness.jpg": exposeweakness,
+    "./abilityicon/meleespecialist.jpg": meleespecialist,
+    "./abilityicon/steadyshot.jpg": steadyshot,
+    "./abilityicon/invigoration.jpg": invigoration,
+    "./abilityicon/traplauncher.jpg": traplauncher,
+    "./abilityicon/furyofstormrage.jpg": furyofstormrage,
+    "./abilityicon/livingseed.jpg": livingseed,
+    "./abilityicon/survivalofthefittest.jpg": survivalofthefittest,
+    "./abilityicon/wildstrikes.jpg": wildstrikes,
+    "./abilityicon/lacerate.jpg": lacerate,
+    "./abilityicon/mangle.jpg": mangle,
+    "./abilityicon/sunfire.jpg": sunfire,
+    "./abilityicon/wildgrowth.jpg": wildgrowth,
+    "./abilityicon/lifebloom.jpg": lifebloom,
+    "./abilityicon/savageroar.jpg": savageroar,
+    "./abilityicon/skullbash.jpg": skullbash,
+    "./abilityicon/starsurge.jpg": starsurge,
+    "./abilityicon/berserk.jpg": berserk,
+    "./abilityicon/eclipse.jpg": eclipse,
+    "./abilityicon/nourish.jpg": nourish,
+    "./abilityicon/dreamstate.jpg": dreamstate,
+    "./abilityicon/kingofthejungle.jpg": kingofthejungle,
+    "./abilityicon/survivalinstincts.jpg": survivalinstincts
 }

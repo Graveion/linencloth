@@ -1,249 +1,5 @@
 [
     {
-        "name": "Berserk",
-        "damageFormulas": [],
-        "description": "When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%. Lasts 15 sec. Requires Bear Form, Cat Form, or Dire Bear Form to activate.\n\nClears the effect of Fear and makes you immune to Fear for the duration.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/berserk.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Eclipse",
-        "damageFormulas": [],
-        "description": "Starfire increases the critical strike chance of your next two Wraths by 30%, and Wrath reduces the cast time of your next Starfire by 1.0 sec, both effects stacking up to 4 charges. Both spells also gain 70% chance at all times to not lose casting time when you take damage.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/eclipse.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Nourish",
-        "damageFormulas": [],
-        "description": "Heals a friendly target for 534 to 627. Heals for an additional 20% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target. This spell benefits from and triggers all effects associated with Healing Touch.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/nourish.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Dreamstate",
-        "damageFormulas": [],
-        "description": "Your damaging spell critical strikes grant you 50% of your mana regeneration while casting for 8 sec and increase Nature damage dealt to the target by 20% for 12 sec.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/dreamstate.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "King of the Jungle",
-        "damageFormulas": [],
-        "description": "Tiger's Fury now increases all physical damage you deal by 15% instead of by a flat value, and instantly grants you 60 Energy. It is no longer on the global cooldown, but it now has its own 30 sec cooldown.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/kingofthejungle.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Survival Instincts",
-        "damageFormulas": [],
-        "description": "When activated, this grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost. Useable in any form.\n\nIn addition, you regenerate 5 rage every time you dodge while in Bear Form or Dire Bear Form, 10 energy while in Cat Form, or 1% of your maximum mana while in any other form.",
-        "playerClass": "druid",
-        "icon": "./abilityicon/survivalinstincts.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Expose Weakness",
-        "damageFormulas": [],
-        "description": "Your melee and ranged criticals increase your attack power by 40% of your current Agility for 7 sec.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/exposeweakness.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Melee Specialist",
-        "damageFormulas": [],
-        "description": "Raptor Strike cooldown reduced to 3 sec and is now instant, Mongoose Bite cooldown removed, and Raptor Strike has a 30% chance on each attack not to trigger its cooldown.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/meleespecialist.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Steady Shot",
-        "damageFormulas": [],
-        "description": "A steady shot that causes 60% ranged weapon damage.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/steadyshot.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Dual Wield Specialization",
-        "damageFormulas": [],
-        "description": "Increases the damage done by your offhand weapon by 50%, causes your Raptor Strike to strike with both weapons when you are dual-wielding, and Raptor Strike deals 30% increased damage when you are wielding two weapons of the same type.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/dualwieldspecialization.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Invigoration",
-        "damageFormulas": [],
-        "description": "When your pet scores a critical hit with a special ability, you instantly regenerate 5% of your maximum mana.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/invigoration.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Trap Launcher",
-        "damageFormulas": [],
-        "description": "Your Traps can now be placed at any location within 35 yards, and can be placed while you are in combat. Additionally, your Fire-based and Frost-based traps now have separate shared cooldowns.",
-        "playerClass": "hunter",
-        "icon": "./abilityicon/traplauncher.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Frostfire Bolt",
-        "damageFormulas": [],
-        "description": "Launches a bolt of frostfire at the enemy, causing 220 to 256 Frostfire damage, slowing movement speed by 40% and causing an additional 20 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/frostfirebolt.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Hot Streak",
-        "damageFormulas": [],
-        "description": "Any time you score 2 non-periodic spell criticals in a row using Fireball, Fire Blast, Scorch, or Living Bomb, your next Pyroblast spell cast within 10 sec will be instant cast.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/hotstreak.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Missile Barrage",
-        "damageFormulas": [],
-        "description": "Gives your Arcane Blast a 40% chance, and your Fireball and Frostbolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the mana cost by 100%, and missiles will fire every 0.5 secs.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/missilebarrage.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Spellfrost Bolt",
-        "damageFormulas": [],
-        "description": "Launches a bolt of spellfrost at the enemy, causing 173 to 202 Spellfrost damage and slowing movement speed by 40% for 9 sec. This spell will be checked against the lower of the target's Frost and Arcane resists and counts as both Frost and Arcane damage.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/spellfrostbolt.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Brain Freeze",
-        "damageFormulas": [],
-        "description": "Your Frost damage spells with chilling effects have a 15% chance to cause your next Fireball, Spellfrost Bolt, or Frostfire Bolt spell to be instant cast and cost no mana.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/brainfreeze.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Chronostatic Preservation",
-        "damageFormulas": [],
-        "description": "Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to 15 sec before it combusts and expires. When unleashed, heals a friendly target for 665 to 998.\n\nThis spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/chronostaticpreservation.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Spell Power",
-        "damageFormulas": [],
-        "description": "Increases critical strike damage bonus of all spells by 50%.",
-        "playerClass": "mage",
-        "icon": "./abilityicon/spellpower.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Frostfire Bolt",
-        "description": "Launches a bolt of frostfire at the enemy, causing {0} to {1} Frostfire damage, slowing movement speed by 40% and causing an additional {2} Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
-        "damageFormulas": [
-            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 25.8)",
-            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 30",
-            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 0.24"
-        ],
-        "playerClass": "mage",
-        "icon": "./abilityicon/frostfire.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Enlightened Judgements",
-        "damageFormulas": [],
-        "description": "Increases the range on your Judgement by 30 yards and your spell hit with all spells by 17%.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/enlightenedjudgements.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Infusion of Light",
-        "damageFormulas": [],
-        "description": "Increases the damage done by your Holy Shock by 20%, and your damaging critical strikes with Holy Shock reset the cooldowns on Holy Shock and Exorcism and refund the cost of Holy Shock.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/infusionoflight.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Sheath of Light",
-        "damageFormulas": [],
-        "description": "Dealing damage with your melee weapon increases your spell power by an amount equal to 30% of your attack power for 1 min. In addition, your critical healing spells heal the target for 60% of the healed amount over 12 sec.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/sheathoflight.jpg",
-        "slot": "Waist"
-    },
-    {
-        "name": "Guarded by the Light",
-        "damageFormulas": [],
-        "description": "Each time you hit a target with your melee weapon, you gain 5% of your maximum mana per 3 sec for 15 sec, but the amount healed by your Flash of Light, Holy Light, and Holy Shock spells is reduced by 50% during this mana regeneration.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/guardedbythelight.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Sacred Shield",
-        "damageFormulas": [],
-        "description": "Each time the target takes damage they gain a Sacred Shield, absorbing 120 damage and increasing the Paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec. In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional 100% over 12 sec. They cannot gain this effect more than once every 6 sec. Lasts 30 sec. This spell cannot be on more than one target at any one time.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/sacredshield.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "The Art of War",
-        "damageFormulas": [],
-        "description": "Your melee critical strikes reset the cooldowns on Holy Shock and Exorcism, and the mana cost of Holy Shock and Exorcism is reduced by 80%.",
-        "playerClass": "paladin",
-        "icon": "./abilityicon/theartofwar.jpg",
-        "slot": "Feet"
-    },
-    {
-        "name": "Warbringer",
-        "damageFormulas": [],
-        "description": "Stuff",
-        "playerClass": "warrior",
-        "icon": "./abilityicon/warbringer.jpg",
-        "slot": "Chest"
-    },
-    {
-        "name": "Raging Blow",
-        "damageFormulas": [],
-        "description": "A ferocious strike that deals 80% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active.",
-        "playerClass": "warrior",
-        "icon": "./abilityicon/ragingblow.jpg",
-        "slot": "Chest"
-    },
-    {
-        "name": "Flagellation",
-        "damageFormulas": [],
-        "description": "Gain a 25% bonus to Physical damage done for 12 sec after activating Bloodrage or Berserker Rage.",
-        "playerClass": "warrior",
-        "icon": "./abilityicon/flagellation.jpg",
-        "slot": "Chest"
-    },
-    {
-        "name": "Blood Frenzy",
-        "damageFormulas": [],
-        "description": "Each time you deal Bleed damage, you gain 3 Rage.",
-        "playerClass": "warrior",
-        "icon": "./abilityicon/bloodfrenzy.jpg",
-        "slot": "Chest"
-    },
-    {
         "name": "Demonic Tactics",
         "damageFormulas": [],
         "description": "Increases the melee and spell critical strike chance of you and your pet by 10%.",
@@ -832,6 +588,734 @@
         "description": "Activate to become the Spirit of Redemption for 10 sec. While in this form, you can cast any healing spell free of cost, but you cannot move, attack, be attacked, or be targeted by any spells or effects. Requires Spirit of Redemption talent to activate, and you will no longer enter Spirit of Redemption upon dying.",
         "playerClass": "priest",
         "icon": "./abilityicon/spiritoftheredeemer.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Aegis",
+        "damageFormulas": [],
+        "description": "Increases your block value by 30% and damaging melee and ranged attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. Effect not cumulative with Redoubt.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/aegis.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Divine Storm",
+        "damageFormulas": [],
+        "description": "An instant weapon attack that causes 110% of weapon damage to up to 4 enemies within 8 yards. The Divine Storm heals up to 3 party or raid members totaling 25% of the damage caused.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/divinestorm.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Horn of Lordaeron",
+        "damageFormulas": [],
+        "description": "The Paladin blows the Horn of Lordaeron, which increases total Strength and Agility of all party members within 30 yards by 6. Lasts 2 min. Exclusive with Blessing of Might.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/hornoflordaeron.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Seal of Martyrdom",
+        "damageFormulas": [],
+        "description": "Fills you with holy spirit for 30 sec, causing each of your melee attacks to deal 40% weapon damage to your target, but you lose health equal to 10% of the damage inflicted. While this seal is active, your party and raid members within 40 yards each gain mana equal to 20% of damage you take from this seal.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 70% weapon damage at the cost of health equal to 10% of the damage inflicted.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/sealofmartyrdom.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Beacon of Light",
+        "damageFormulas": [],
+        "description": "The target becomes a Beacon of Light to all members of your party or raid within a 40 yard radius. Any heals you cast on party or raid members will also heal the Beacon for 100% of the amount healed. Only one target can be the Beacon of Light at a time. Lasts 1 min.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/beaconoflight.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Crusader Strike",
+        "damageFormulas": [],
+        "description": "An instant strike that causes 75% weapon damage and regenerates 5% of your maximum mana.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/crusaderstrike.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Hand of Reckoning",
+        "damageFormulas": [],
+        "description": "Taunts the target to attack you, but has no effect if the target is already attacking you.\n\nWhile you know this ability, the threat bonus from Righteous Fury is increased to 80% and Righteous Fury causes you to gain mana when healed by others equal to 25% of the amount healed. Additionally, while Righteous Fury is active, damage which takes you below 35% health is reduced by 20%. Righteous Fury will remain active until cancelled.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/handofreckoning.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Avenger's Shield",
+        "damageFormulas": [],
+        "description": "Hurls a holy shield at the enemy, dealing 366 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * + 0.091 * to 448 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * + 0.091 * Holy damage, Dazing them and then jumping to additional nearby enemies. Affects 3 total targets. Lasts 10 sec.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/avengersshield.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Divine Sacrifice",
+        "damageFormulas": [],
+        "description": "30% of all damage taken by party members within 30 yards is redirected to the Paladin for 10 sec. Damage which reduces the Paladin below 20% health will break the effect and grant the paladin 10% increased damage and healing done for 10 sec. Divine Sacrifice cannot be used while you are under the effects of Blessing of Protection, Divine Shield, or Divine Protection, and prevents you from being targeted by those abilities while it is active.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/divinesacrifice.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Exorcist",
+        "damageFormulas": [],
+        "description": "Exorcism can now be cast on any target and has 100% increased critical strike chance against Undead and Demons.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/exorcist.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Inspiration Exemplar",
+        "damageFormulas": [],
+        "description": "Gain the Inspiration Exemplar ability: Your inspiring presence periodically dispels Fear and Sleep effects on nearby party members.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/inspirationexemplar.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Rebuke",
+        "damageFormulas": [],
+        "description": "Interrupts spellcasting and prevents any spell in that school from being cast for 3 sec.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/rebuke.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Enlightened Judgements",
+        "damageFormulas": [],
+        "description": "Increases the range on your Judgement by 30 yards and your spell hit with all spells by 17%.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/enlightenedjudgements.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Infusion of Light",
+        "damageFormulas": [],
+        "description": "Increases the damage done by your Holy Shock by 20%, and your damaging critical strikes with Holy Shock reset the cooldowns on Holy Shock and Exorcism and refund the cost of Holy Shock.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/infusionoflight.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Sheath of Light",
+        "damageFormulas": [],
+        "description": "Dealing damage with your melee weapon increases your spell power by an amount equal to 30% of your attack power for 1 min. In addition, your critical healing spells heal the target for 60% of the healed amount over 12 sec.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/sheathoflight.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Guarded by the Light",
+        "damageFormulas": [],
+        "description": "Each time you hit a target with your melee weapon, you gain 5% of your maximum mana per 3 sec for 15 sec, but the amount healed by your Flash of Light, Holy Light, and Holy Shock spells is reduced by 50% during this mana regeneration.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/guardedbythelight.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Sacred Shield",
+        "damageFormulas": [],
+        "description": "Each time the target takes damage they gain a Sacred Shield, absorbing 120 damage and increasing the Paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec. In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional 100% over 12 sec. They cannot gain this effect more than once every 6 sec. Lasts 30 sec. This spell cannot be on more than one target at any one time.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/sacredshield.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "The Art of War",
+        "damageFormulas": [],
+        "description": "Your melee critical strikes reset the cooldowns on Holy Shock and Exorcism, and the mana cost of Holy Shock and Exorcism is reduced by 80%.",
+        "playerClass": "paladin",
+        "icon": "./abilityicon/theartofwar.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Blood Frenzy",
+        "damageFormulas": [],
+        "description": "Each time you deal Bleed damage, you gain 3 Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/bloodfrenzy.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Flagellation",
+        "damageFormulas": [],
+        "description": "Gain a 25% bonus to Physical damage done for 12 sec after activating Bloodrage or Berserker Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/flagellation.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Raging Blow",
+        "damageFormulas": [],
+        "description": "A ferocious strike that deals 80% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/ragingblow.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Warbringer",
+        "damageFormulas": [],
+        "description": "Your Charge, Intercept, and Intervene abilities are now usable while in combat and in any stance, and will all remove movement impairing effects when activated.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/warbringer.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Devastate",
+        "damageFormulas": [],
+        "description": "While you are in Defensive Stance and have a shield equipped, Sunder Armor also deals damage equal to 100% of your equipped weapon's damage per second, increased by 10% per application of Sunder Armor already on the target.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/devastate.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Endless Rage",
+        "damageFormulas": [],
+        "description": "You generate 25% more Rage from all damage you deal.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/endlessrage.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Quick Strike",
+        "damageFormulas": [],
+        "description": "A reckless instant melee attack with your two-handed weapon dealing (Attack power * 10 / 100) to (Attack power * 20 / 100) physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/quickstrike.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Single-Minded Fury",
+        "damageFormulas": [],
+        "description": "While dual-wielding, your Physical damage and movement speed are increased by 10%.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/singlemindedfury.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Victory Rush",
+        "damageFormulas": [],
+        "description": "Instantly attack the target causing (1 + Attack power * 45 / 100) damage and healing you for 10% of your maximum health. Only useable within 20 sec after you kill an enemy that yields experience or honor.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/victoryrush.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Consumed by Rage",
+        "damageFormulas": [],
+        "description": "Enrages you and grants you a 10% melee damage bonus for 12 sec or up to a maximum of 12 swings after you exceed 80 Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/consumedbyrage.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Frenzied Assault",
+        "damageFormulas": [],
+        "description": "While wielding 2-handed weapons, your attack speed is increased by 20%.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/frenziedassault.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Furious Thunder",
+        "damageFormulas": [],
+        "description": "Thunder Clap now increases the time between attacks by an additional 6%, can be used in any stance, deals 100% increased damage, and deals 50% increased threat.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/furiousthunder.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Blood Surge",
+        "damageFormulas": [],
+        "description": "Heroic Strike, Bloodthirst, and Whirlwind have a 30% chance to make your next Slam within 15 sec instant and cost no Rage.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/bloodsurge.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Focused Rage",
+        "damageFormulas": [],
+        "description": "Reduces the rage cost of your offensive abilities by 3.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/focusedrage.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Precise Timing",
+        "damageFormulas": [],
+        "description": "Slam is now instant but has a 6 sec cooldown.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/precisetiming.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Enraged Regeneration",
+        "damageFormulas": [],
+        "description": "Heals you for 30% of your maximum health over 10 sec, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Useable while Stunned.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/enragedregeneration.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Intervene",
+        "damageFormulas": [],
+        "description": "Run at high speed towards a party member, intercepting the next melee or ranged attack made against them as well as reducing their total threat by 10%.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/intervene.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Rallying Cry",
+        "damageFormulas": [],
+        "description": "Let loose a rallying cry, granting all party and raid members within 40 yards 15% increased maximum health for 10 sec.",
+        "playerClass": "warrior",
+        "icon": "./abilityicon/rallyingcry.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Burnout",
+        "damageFormulas": [],
+        "description": "Increases your spell critical strike chance with all spells by 15%, but your non-periodic spell critical strikes now have an additional mana cost of 1% of your base mana.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/burnout.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Enlightenment",
+        "damageFormulas": [],
+        "description": "You deal 10% more damage while you have more than 70% mana. While below 30% mana 10% of your mana regeneration continues while casting.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/enlightenment.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Fingers of Frost",
+        "damageFormulas": [],
+        "description": "Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/fingersoffrost.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Regeneration",
+        "damageFormulas": [],
+        "description": "Heals the target for 419 health over 3 sec and applies Temporal Beacon for 30 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/regeneration.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Arcane Blast",
+        "damageFormulas": [],
+        "description": "Blasts the target with energy, dealing 386 to 449 Arcane damage. Each time you cast Arcane Blast, the damage and healing of all other Arcane spells is increased by 15% and mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 6 sec or until any other Arcane damage or healing spell is cast.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/arcaneblast.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Ice Lance",
+        "damageFormulas": [],
+        "description": "Deals 47 to 55 Frost damage to an enemy target. Causes triple damage against Frozen targets.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/icelance.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Living Bomb",
+        "damageFormulas": [],
+        "description": "The target becomes a Living Bomb, taking 290 Fire damage over 12 sec. After 12 sec or when the spell is dispelled, the target explodes dealing 146 Fire damage to all enemies within 10 yards.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/livingbomb.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Rewind Time",
+        "damageFormulas": [],
+        "description": "Your current target with your Temporal Beacon instantly heals all damage taken over the last 5 seconds. Ineffective on targets that did not have a Temporal Beacon 5 seconds ago.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/rewindtime.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Arcane Surge",
+        "damageFormulas": [],
+        "description": "Unleash all of your remaining mana in a surge of energy focused at the target dealing 192 to 225 Arcane damage, increased by up to 300% based on your mana remaining. Afterward, your normal mana regeneration is activated and increased by 300% for 8 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/arcanesurge.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Icy Veins",
+        "damageFormulas": [],
+        "description": "Hastens your spellcasting, increasing spell casting speed by 20% and reduces the pushback suffered from damaging attacks while casting by 100%. Lasts 20 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/icyveins.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Living Flame",
+        "damageFormulas": [],
+        "description": "Summons a spellfire flame that moves toward the target, leaving a trail of spellfire. This trail deals 85 Spellfire damage every second to nearby enemies. Lasts 20 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/livingflame.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Mass Regeneration",
+        "damageFormulas": [],
+        "description": "Heals all of target player's party members within 30 yards of target player for 419 health over 3 sec and applies Temporal Beacon to each target for 15 sec.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/massregeneration.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Frostfire Bolt",
+        "damageFormulas": [],
+        "description": "Launches a bolt of frostfire at the enemy, causing 220 to 256 Frostfire damage, slowing movement speed by 40% and causing an additional 20 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/frostfirebolt.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Hot Streak",
+        "damageFormulas": [],
+        "description": "Any time you score 2 non-periodic spell criticals in a row using Fireball, Fire Blast, Scorch, or Living Bomb, your next Pyroblast spell cast within 10 sec will be instant cast.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/hotstreak.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Missile Barrage",
+        "damageFormulas": [],
+        "description": "Gives your Arcane Blast a 40% chance, and your Fireball and Frostbolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the mana cost by 100%, and missiles will fire every 0.5 secs.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/missilebarrage.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Spellfrost Bolt",
+        "damageFormulas": [],
+        "description": "Launches a bolt of spellfrost at the enemy, causing 173 to 202 Spellfrost damage and slowing movement speed by 40% for 9 sec. This spell will be checked against the lower of the target's Frost and Arcane resists and counts as both Frost and Arcane damage.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/spellfrostbolt.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Brain Freeze",
+        "damageFormulas": [],
+        "description": "Your Frost damage spells with chilling effects have a 15% chance to cause your next Fireball, Spellfrost Bolt, or Frostfire Bolt spell to be instant cast and cost no mana.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/brainfreeze.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Chronostatic Preservation",
+        "damageFormulas": [],
+        "description": "Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to 15 sec before it combusts and expires. When unleashed, heals a friendly target for 665 to 998. This spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/chronostaticpreservation.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Spell Power",
+        "damageFormulas": [],
+        "description": "Increases critical strike damage bonus of all spells by 50%.",
+        "playerClass": "mage",
+        "icon": "./abilityicon/spellpower.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Cobra Strikes",
+        "damageFormulas": [],
+        "description": "Your critical hits with Shot abilities cause your pet's next 2 special attacks to critically hit.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/cobrastrikes.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Heart of the Lion",
+        "damageFormulas": [],
+        "description": "The hunter invokes the heart of a lion, increasing total stats by 10% for all nearby allies, and increasing total stats for the Hunter by an additional 10%.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/heartofthelion.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Lone Wolf",
+        "damageFormulas": [],
+        "description": "You deal 30% increased damage with all attacks while you do not have an active pet.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/lonewolf.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Master Marksman",
+        "damageFormulas": [],
+        "description": "Increases your critical strike chance by 5%, and reduces the Mana cost of all your Shot abilities by 25%.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/mastermarksman.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Beast Mastery",
+        "damageFormulas": [],
+        "description": "Your pet's damage and health are increased by 20%, and its Focus regeneration by 50%. In addition, your pet's Growl now also Taunts the target to attack it for 3 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/beastmastery.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Carve",
+        "damageFormulas": [],
+        "description": "A sweeping attack that strikes all enemies in front of you for 50% weapon damage.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/carve.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Chimera Shot",
+        "damageFormulas": [],
+        "description": "You deal 100% weapon damage, refreshing the current Sting on your target and triggering an effect: Serpent Sting - Instantly deals 40% of the damage done by your Serpent Sting. Viper Sting - Instantly restores mana to you equal to 60% of the total amount drained by your Viper Sting. Scorpid Sting - Attempts to Disarm the target for 10 sec. This effect cannot occur more than once per 1 minute.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/chimerashot.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Explosive Shot",
+        "damageFormulas": [],
+        "description": "You fire an explosive charge into the enemy target, dealing * 0.039 + 36 / 100 * (2.976264 + 0.641066 * 40 + 0.022519 * 40 * 40)- * 0.039 + 54 / 100 * (2.976264 + 0.641066 * 40 + 0.022519 * 40 * 40) Fire damage to all enemies within 8 yards. The charge will deal damage again every second for an additional 2 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/explosiveshot.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Flanking Strike",
+        "damageFormulas": [],
+        "description": "You and your pet deal simultaneous instant 100% melee damage. Afterward, your Mongoose Bite and Raptor Strike deal 10% increased damage for 10 sec, stacking up to 3 times. Raptor Strike has a 20% chance to reset the cooldown on Flanking Strike.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/flankingstrike.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Kill Command",
+        "damageFormulas": [],
+        "description": "Give the command to kill, increasing your pet's damage done from Claw and Bite by 60% for 30 sec. Each Claw or Bite done by the pet reduces the damage bonus by 20%.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/killcommand.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Serpent Spread",
+        "damageFormulas": [],
+        "description": "Targets hit by your Multi-Shot are also afflicted by your Serpent Sting for 6 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/serpentspread.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Sniper Training",
+        "damageFormulas": [],
+        "description": "Your Shot abilities gain 10% increased critical strike chance while you have not moved for the last 6 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/snipertraining.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Expose Weakness",
+        "damageFormulas": [],
+        "description": "Your melee and ranged criticals increase your attack power by 40% of your current Agility for 7 sec.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/exposeweakness.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Melee Specialist",
+        "damageFormulas": [],
+        "description": "Raptor Strike cooldown reduced to 3 sec and is now instant, Mongoose Bite cooldown removed, and Raptor Strike has a 30% chance on each attack not to trigger its cooldown.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/meleespecialist.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Steady Shot",
+        "damageFormulas": [],
+        "description": "A steady shot that causes 60% ranged weapon damage.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/steadyshot.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Dual Wield Specialization",
+        "damageFormulas": [],
+        "description": "Increases the damage done by your offhand weapon by 50%, causes your Raptor Strike to strike with both weapons when you are dual-wielding, and Raptor Strike deals 30% increased damage when you are wielding two weapons of the same type.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/dualwieldspecialization.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Invigoration",
+        "damageFormulas": [],
+        "description": "When your pet scores a critical hit with a special ability, you instantly regenerate 5% of your maximum mana.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/invigoration.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Trap Launcher",
+        "damageFormulas": [],
+        "description": "Your Traps can now be placed at any location within 35 yards, and can be placed while you are in combat. Additionally, your Fire-based and Frost-based traps now have separate shared cooldowns.",
+        "playerClass": "hunter",
+        "icon": "./abilityicon/traplauncher.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Fury of Stormrage",
+        "damageFormulas": [],
+        "description": "Reduces the mana cost of Wrath by 100% and each time you deal damage with Wrath you have a 12% chance for your next cast of Healing Touch within 15 sec to be instant.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/furyofstormrage.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Living Seed",
+        "damageFormulas": [],
+        "description": "When you critically heal your target with any healing spell you plant a Living Seed on the target for 30% of the amount healed. The Living Seed will bloom when the target is next attacked. Lasts 15 sec.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/livingseed.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Survival of the Fittest",
+        "damageFormulas": [],
+        "description": "Reduces the chance you'll be critically hit by melee attacks by 6% and reduces all damage taken by 10%. Damage taken reduced by an additional 10% while in Bear Form or Dire Bear Form.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/survivalofthefittest.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Wild Strikes",
+        "damageFormulas": [],
+        "description": "While you are in Cat Form, Bear Form, or Dire Bear Form, party members within 20 yards gain increased combat ferocity. Each melee hit has a 20% chance of granting the attacker an extra attack with 20% additional Attack Power. No effect if the party member is already benefitting from Windfury Totem.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/wildstrikes.jpg",
+        "slot": "Chest"
+    },
+    {
+        "name": "Lacerate",
+        "damageFormulas": [],
+        "description": "Lacerates the enemy target, making them bleed for 80 damage over 15 sec plus 20% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/lacerate.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Mangle",
+        "damageFormulas": [],
+        "description": "Gain the Mangle (Bear) ability and replace your Claw ability with Mangle (Cat). This ability benefits from and triggers all effects associated with Claw and Maul. Mangle the target for 160% normal damage and cause the target to take 30% additional damage from Bleed effects and Shred for 1 min. This ability benefits from and triggers all effects associated with Claw and Maul. Mangle the target for 270% normal damage and cause the target to take 30% additional damage from Bleed effects and Shred for 1 min. Awards 1 combo point. This ability benefits from and triggers all effects associated with Claw and Maul.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/mangle.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Sunfire",
+        "damageFormulas": [],
+        "description": "Gain the Sunfire ability and while in Bear Form, Cat Form, or Dire Bear Form your Moonfire is replaced with Sunfire (Bear) or Sunfire (Cat). This spell benefits from and triggers all effects associated with Moonfire. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Awards 1 combo point.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/sunfire.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Wild Growth",
+        "damageFormulas": [],
+        "description": "Heals all of target player's party members within 40 yards of target player for 789 over 7 sec. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/wildgrowth.jpg",
+        "slot": "Hands"
+    },
+    {
+        "name": "Lifebloom",
+        "damageFormulas": [],
+        "description": "Reduces the global cooldown on your Rejuvenation and Lifebloom abilities by 0.5 sec and you gain the Lifebloom ability: Heals the target for 93 over 7 sec. When Lifebloom completes its duration or is dispelled, the target instantly heals for 189 and the Druid regains half the cost of the spell. This effect can stack up to 3 times on the same target.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/lifebloom.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Savage Roar",
+        "damageFormulas": [],
+        "description": "Finishing move that increases physical damage done by 30% while in Cat Form. Lasts longer per combo point: 1 point : 14 seconds 2 points: 19 seconds 3 points: 24 seconds 4 points: 29 seconds 5 points: 34 seconds",
+        "playerClass": "druid",
+        "icon": "./abilityicon/savageroar.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Skull Bash",
+        "damageFormulas": [],
+        "description": "Charge to a target within 13 yards and bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for 2 sec. Shares a cooldown with Feral Charge.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/skullbash.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Starsurge",
+        "damageFormulas": [],
+        "description": "Launch surging stellar energies that cause 197 to 242 Arcane damage, and increases the damage done by your next 1 Starfire cast by 66% for 15 sec. Starsurge benefits from and triggers most talents and effects that trigger or benefit from Wrath or Starfire.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/starsurge.jpg",
+        "slot": "Legs"
+    },
+    {
+        "name": "Berserk",
+        "damageFormulas": [],
+        "description": "When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%. Lasts 15 sec. Requires Bear Form, Cat Form, or Dire Bear Form to activate. Clears the effect of Fear and makes you immune to Fear for the duration.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/berserk.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Eclipse",
+        "damageFormulas": [],
+        "description": "Starfire increases the critical strike chance of your next two Wraths by 30%, and Wrath reduces the cast time of your next Starfire by 1.0 sec, both effects stacking up to 4 charges. Both spells also gain 70% chance at all times to not lose casting time when you take damage.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/eclipse.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Nourish",
+        "damageFormulas": [],
+        "description": "Heals a friendly target for 534 to 627. Heals for an additional 20% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target. This spell benefits from and triggers all effects associated with Healing Touch.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/nourish.jpg",
+        "slot": "Waist"
+    },
+    {
+        "name": "Dreamstate",
+        "damageFormulas": [],
+        "description": "Your damaging spell critical strikes grant you 50% of your mana regeneration while casting for 8 sec and increase Nature damage dealt to the target by 20% for 12 sec.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/dreamstate.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "King of the Jungle",
+        "damageFormulas": [],
+        "description": "Tiger's Fury now increases all physical damage you deal by 15% instead of by a flat value, and instantly grants you 60 Energy. It is no longer on the global cooldown, but it now has its own 30 sec cooldown.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/kingofthejungle.jpg",
+        "slot": "Feet"
+    },
+    {
+        "name": "Survival Instincts",
+        "damageFormulas": [],
+        "description": "When activated, this grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost. Useable in any form. In addition, you regenerate 5 rage every time you dodge while in Bear Form or Dire Bear Form, 10 energy while in Cat Form, or 1% of your maximum mana while in any other form.",
+        "playerClass": "druid",
+        "icon": "./abilityicon/survivalinstincts.jpg",
         "slot": "Feet"
     }
 ]
