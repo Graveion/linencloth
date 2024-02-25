@@ -1,15 +1,14 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-
 import { Rune, calculateValues } from '../types/Rune';
 import { images } from '../img/images'
+
+import './RuneDescriptor.css';
 
 interface RuneDescriptorProps {
     rune: Rune;
     level: number
 }
 
-const RuneDescriptor: React.FC<RuneDescriptorProps> = ({ rune, level }) => {
+const RuneDescriptor = ({ rune, level }: RuneDescriptorProps) => {
     // todo: have values for power / level via class select
     // then import in the seelctor - have the state at a higher level like where the Header is for laughs
 

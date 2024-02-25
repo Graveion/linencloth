@@ -1,23 +1,24 @@
 .item-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .name {
-    font-weight: bold;
-  }
-  
-  .description {
-    font-size: 8px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+}

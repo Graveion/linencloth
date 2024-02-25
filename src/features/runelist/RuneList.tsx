@@ -10,9 +10,9 @@ export const RuneList = () => {
     const selectedRunesState = useAppSelector(selectedRunes);
 
     return (
-        <div className="item-list">
+        <div className="runelist">
             {Object.values(selectedRunesState).map((value) => (
-                <RuneDescriptor rune={value} level={40}/> 
+                <RuneDescriptor key={value.name} rune={value} level={40}/> 
             ))}
         </div>
       );
