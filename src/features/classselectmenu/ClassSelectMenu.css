@@ -7,6 +7,7 @@ button:hover {
   color: #ffffff8c;
   background-color: #0021d920;
   border: 1px solid #3498db; 
+  border-radius: 10px;
   width: 54px; 
   height: 54px;
 }
@@ -15,13 +16,15 @@ button:hover {
   display: flex;
 }
 
-.button {
-  border: 3px solid #3498db; 
+.class-button {
+  border: none; 
+  background-color: #0021d900;
+  padding: 8px;
   width: 54px; 
   height: 54px;
 }
 
-.button img {
+.class-button img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -32,4 +35,11 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  gap: 10px
 }

@@ -1,15 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import classSelectMenuSlice from "../features/classselectmenu/ClassSelectMenuSlice" 
-import dropdownSlice from "../features/dropdown/DropdownSlice" 
-import runeExplorerSlice from "../features/runeexplorer/RuneExplorerSlice" 
 import logger from 'redux-logger'
-import runeSelectMenuSlice from '../features/runeselectmenu/RuneSelectMenuSlice'
+
+import classSelectMenuSlice from "../features/classselectmenu/ClassSelectMenuSlice" 
+import runeExplorerSlice from "../features/runeexplorer/RuneExplorerSlice" 
+import levelSelectionSlice from "../features/levelselector/LevelSelectionSlice" 
 
 const reducer = {
   classSelectMenu: classSelectMenuSlice,
-  dropdown: dropdownSlice,
   runeExplorer: runeExplorerSlice,
-  runeSelectMenu: runeSelectMenuSlice,
+  levelSelection: levelSelectionSlice,
 }
 
 const store = configureStore({
@@ -17,6 +16,7 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
   devTools: process.env.NODE_ENV !== 'production',
 })
+
 export type RootState = ReturnType<typeof store.getState>
 
 // Infer the type of `store`

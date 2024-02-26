@@ -1,4 +1,4 @@
-button.active {
+.button.active {
     position: relative;
     width: 100%;
     height: 100%;
@@ -12,15 +12,16 @@ button.active {
     left: 0;
 }
 
-.button {
+.rune-button {
     position: relative;
+    height: 56px;
+    width: 56px;
     background: rgba(0, 0, 0, 0);
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
-.button:hover {
+.rune-button:hover {
     background-color: #44b0ef1b;
   }
 

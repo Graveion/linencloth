@@ -14,7 +14,7 @@ export const RuneList = () => {
     return (
         <div className="runelist">
             {Object.values(selectedRunesState).map((value) => (
-                <RuneDescriptor key={value.name} rune={value} level={40}/> 
+                <RuneDescriptor key={value.name} rune={value}/> 
             ))}
         </div>
       );

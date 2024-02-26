@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
-import { setShowDropdown, showDropdown } from "./RuneSelectMenuSlice";
 import { setSelectedRune } from "../runeexplorer/RuneExplorerSlice"
 
 import { Rune } from "../../types/Rune";
 import { images } from '../../img/images'
 
-import { selectSelectedOption } from "../dropdown/DropdownSlice";
 import Dropdown from "../dropdown/Dropdown";
-import Tooltip from "../../components/Tooltip";
 
 import './RuneSelectMenu.css';
 
@@ -19,11 +16,11 @@ interface RuneSelectMenuProps {
   slotImage: string
 }
 
-export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedRune, slotImage }) => {
+export const RuneSelectMenu = ({ runes, selectedRune, slotImage }: RuneSelectMenuProps) => {
   const dispatch = useAppDispatch()
 
-  const dropdownSelection = useAppSelector(selectSelectedOption)
-
+  // Nothing else in the app needs to know whether the drop down is open or closed
+  // so handle state locally
   const [dropdown, setDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -42,10 +39,11 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedR
     }
   };
 
-  useEffect(() => {
-    // Dispatch the action from the RuneExplorerSlice when the selected option changes
-    dispatch(setSelectedRune(dropdownSelection));
-  }, [dropdownSelection, dispatch]);
+  // Similarly here, nothing in the app directly needs to know the dropdown selection
+  // so we can use a traditional callback before dispatching to the store
+  const handleDropdownChange = (selectedValue: string) => {
+    dispatch(setSelectedRune(selectedValue));
+  };
 
   const defaultSlotImage = (slot: string) => {
     return (
@@ -69,7 +67,7 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedR
         { selectedRune ? runeImage(selectedRune) : defaultSlotImage(slotImage) }
         <div className="wrapper">
           <button
-            className={dropdown ? "button.active" : "button"}
+            className={"rune-button"}
             onClick={toggleDropdown}
             onBlur={(e: React.FocusEvent<HTMLButtonElement>): void =>
               dismissHandler(e)
@@ -80,6 +78,8 @@ export const RuneSelectMenu: React.FC<RuneSelectMenuProps> = ({ runes, selectedR
               options={runes.map((rune: Rune) => {
                 return { id: rune.name, imgURI: rune.icon };
               })}
+
+              onChange={handleDropdownChange}
 
               isVisible={dropdown}
             />

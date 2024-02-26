@@ -8,6 +8,7 @@ import { selectClass, selectedClass } from "./ClassSelectMenuSlice";
 import { loadRuneData } from '../runeexplorer/RuneExplorerSlice';
 
 import './ClassSelectMenu.css';
+import LevelSelector from "../levelselector/LevelSelector";
 
 export const ClassSelectMenuRedux = () => {
   const dispatch = useAppDispatch()
@@ -22,7 +23,7 @@ export const ClassSelectMenuRedux = () => {
   const renderClassButtons = () => {    
     return Object.values(PlayerClass).map((option) => (
       <button
-        className={option === selectedOption ? 'button-selected' : 'button'}
+        className={option === selectedOption ? 'button-selected' : 'class-button'}
         key={option}
         onClick={() => dispatch(selectClass(option))}
       >
@@ -40,7 +41,11 @@ export const ClassSelectMenuRedux = () => {
 
   return (
     <div>
-      <h2>{capitalise(selectedOption)}</h2>
+      <div className="menu-header">
+        <h2>{capitalise(selectedOption)}</h2>
+        <LevelSelector />
+      </div>
+      
       { renderClassButtons() }
     </div>
   );

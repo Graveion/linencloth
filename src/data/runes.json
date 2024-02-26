@@ -200,10 +200,10 @@
       {
         "name": "Molten Blast",
         "damageFormulas": [
-            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 72 / 100 + 5 / 100",
-            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 108 / 100 + 5 / 100"
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 72 / 100 + 5 / 100 * {power}",
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 108 / 100 + 5 / 100 * {power}"
         ],
-        "description": "Blast up to 4 enemies in a cone in front of you for (7.583798 + 0.471881 * 40 + 0.036599 * 40 * 40) * 72 / 100 + 5 / 100 * to (7.583798 + 0.471881 * 40 + 0.036599 * 40 * 40) * 108 / 100 + 5 / 100 * Fire damage. This ability generates a high amount of threat. Flame Shock periodic damage has a 10% chance to reset the cooldown on Molten Blast.",
+        "description": "Blast up to 4 enemies in a cone in front of you for {0} to {1} Fire damage. This ability generates a high amount of threat. Flame Shock periodic damage has a 10% chance to reset the cooldown on Molten Blast.",
         "playerClass": "shaman",
         "icon": "./abilityicon/moltenblast.jpg",
         "slot": "Hands"
@@ -472,8 +472,10 @@
     },
     {
         "name": "Void Plague",
-        "damageFormulas": [],
-        "description": "Afflicts the target with a disease that causes 683 Shadow damage over 18 sec.",
+        "damageFormulas": [
+            "(9.456667 + 0.635108 * {level} + 0.039063 * {level} * {level}) * 117 / 100 * 6"
+        ],
+        "description": "Afflicts the target with a disease that causes {0} Shadow damage over 18 sec.",
         "playerClass": "priest",
         "icon": "./abilityicon/voidplague.jpg",
         "slot": "Chest"
@@ -784,8 +786,11 @@
     },
     {
         "name": "Quick Strike",
-        "damageFormulas": [],
-        "description": "A reckless instant melee attack with your two-handed weapon dealing (Attack power * 10 / 100) to (Attack power * 20 / 100) physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.",
+        "damageFormulas": [
+            "{power} * 0.1",
+            "{power} * 0.2"
+        ],
+        "description": "A reckless instant melee attack with your two-handed weapon dealing {0} to {1} physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.",
         "playerClass": "warrior",
         "icon": "./abilityicon/quickstrike.jpg",
         "slot": "Hands"
@@ -1225,7 +1230,7 @@
     {
         "name": "Sunfire",
         "damageFormulas": [],
-        "description": "Gain the Sunfire ability and while in Bear Form, Cat Form, or Dire Bear Form your Moonfire is replaced with Sunfire (Bear) or Sunfire (Cat). This spell benefits from and triggers all effects associated with Moonfire. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Awards 1 combo point.",
+        "description": "Gain the Sunfire ability and while in Bear Form, Cat Form, or Dire Bear Form your Moonfire is replaced with Sunfire (Bear) or Sunfire (Cat). This spell benefits from and triggers all effects associated with Moonfire. Burns the enemy for 103 to 121 Nature damage and then an additional 207 Nature damage over 12 sec. Awards 1 combo point.",
         "playerClass": "druid",
         "icon": "./abilityicon/sunfire.jpg",
         "slot": "Hands"

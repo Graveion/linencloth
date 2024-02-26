@@ -1,0 +1,10 @@
+.number-input {
+    display: flex;
+    align-items: last baseline;
+    gap: 10px
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
