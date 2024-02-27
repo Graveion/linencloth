@@ -5,6 +5,6 @@ const spellPowerPickerSlice = createNumberInputSlice({
     initialState: { value: 450, min: 1, max: 2000 },
 })
 
-export const { setValue } = spellPowerPickerSlice.actions;
+export const { setValue: setSpellPower } = spellPowerPickerSlice.actions;
 export const selectSpellPower = (state: { spellPowerPicker: NumberInputState }) => state.spellPowerPicker.value;
 export default spellPowerPickerSlice.reducer;

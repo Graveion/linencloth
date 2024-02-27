@@ -1,6 +1,6 @@
 import { useAppSelector, useAppDispatch } from "../../app/hooks"
 
-import { selectAttackPower, setValue } from './AttackPowerPickerSlice';
+import { selectAttackPower, setAttackPower } from './AttackPowerPickerSlice';
 
 import NumberInput from '../../components/NumberInput/NumberInput'
 
@@ -10,7 +10,7 @@ const AttackPowerPicker = () => {
     const inputValue = useAppSelector(selectAttackPower);
 
     const handleNewValue = (newValue: number) => {
-        dispatch(setValue(newValue))
+        dispatch(setAttackPower(newValue))
     };
 
     return (

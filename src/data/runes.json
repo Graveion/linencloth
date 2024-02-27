@@ -33,8 +33,11 @@
       },
       {
         "name": "Chaos Bolt",
-        "damageFormulas": [],
-        "description": "Sends a bolt of chaotic fire at the enemy, dealing 440 to 557 Fire damage. Chaos Bolt always hits, cannot be resisted, and its knowledge causes all your Fire spells to pierce through absorption effects. Chaos Bolt gains a high chance to be resisted when used against monsters 4 or more levels above your level.",
+        "damageFormulas": [
+            "(6.568597 + 0.672028 * {level} + 0.031721 * {level} * {level}) * 522 / 100",
+            "(6.568597 + 0.672028 * {level} + 0.031721 * {level} * {level}) * 662 / 100"
+        ],
+        "description": "Sends a bolt of chaotic fire at the enemy, dealing {0} to {1} Fire damage. Chaos Bolt always hits, cannot be resisted, and its knowledge causes all your Fire spells to pierce through absorption effects. Chaos Bolt gains a high chance to be resisted when used against monsters 4 or more levels above your level.",
         "playerClass": "warlock",
         "icon": "./abilityicon/chaosbolt.jpg",
         "slot": "Hands"
@@ -650,8 +653,11 @@
     },
     {
         "name": "Avenger's Shield",
-        "damageFormulas": [],
-        "description": "Hurls a holy shield at the enemy, dealing 366 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * + 0.091 * to 448 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * + 0.091 * Holy damage, Dazing them and then jumping to additional nearby enemies. Affects 3 total targets. Lasts 10 sec.",
+        "damageFormulas": [
+            "366 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * {sp} + 0.091 * {ap}",
+            "448 * (9.046514 + 0.676562 * {level} + 0.019349 * {level} * {level}) / 100 + 0.091 * {sp} + 0.091 * {ap}"
+        ],
+        "description": "Hurls a holy shield at the enemy, dealing {0} to {1} Holy damage, Dazing them and then jumping to additional nearby enemies. Affects 3 total targets. Lasts 10 sec.",
         "playerClass": "paladin",
         "icon": "./abilityicon/avengersshield.jpg",
         "slot": "Legs"

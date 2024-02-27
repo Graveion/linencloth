@@ -1,6 +1,6 @@
 import { useAppSelector, useAppDispatch } from "../../app/hooks"
 
-import { selectSpellPower, setValue } from './SpellPowerPickerSlice';
+import { selectSpellPower, setSpellPower } from './SpellPowerPickerSlice';
 
 import NumberInput from '../../components/NumberInput/NumberInput'
 
@@ -10,7 +10,7 @@ const SelectPowerPicker = () => {
     const inputValue = useAppSelector(selectSpellPower);
 
     const handleNewValue = (newValue: number) => {
-        dispatch(setValue(newValue))
+        dispatch(setSpellPower(newValue))
     };
 
     return (

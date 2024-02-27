@@ -42,7 +42,6 @@ export const createNumberInputSlice = ({
   });
 };
 
-
 const NumberInput = ({ text, inputValue, onChange}: NumberInputProps) => {
 
 

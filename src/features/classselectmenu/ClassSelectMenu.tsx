@@ -11,6 +11,10 @@ import './ClassSelectMenu.css';
 import LevelSelector from "../levelselector/LevelSelector";
 import PowerPickers from "../../components/PowerPickers/PowerPicker";
 
+import { setAttackPower } from '../../features/attackpowerpicker/AttackPowerPickerSlice'
+import { setHealerPower } from "../healerpowerpicker/HealerPowerPickerSlice";
+import { setSpellPower } from "../spellpowerpicker/SpellPowerPickerSlice";
+
 export const ClassSelectMenuRedux = () => {
   const dispatch = useAppDispatch()
 
@@ -19,6 +23,9 @@ export const ClassSelectMenuRedux = () => {
   useEffect(() => {
     // Dispatch the action from the RuneExplorer slice when the selected option changes
     dispatch(loadRuneData(selectedOption));
+    dispatch(setAttackPower(500))
+    dispatch(setSpellPower(200))
+    dispatch(setHealerPower(300))
   }, [selectedOption, dispatch]);
 
   const renderClassButtons = () => {    
