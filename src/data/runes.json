@@ -186,8 +186,11 @@
       },
       {
         "name": "Lava Burst",
-        "damageFormulas": [],
-        "description": "You hurl molten lava at the target, dealing 399 to 514 Fire damage. If your Flame Shock is on the target, Lava Burst will deal a critical strike.",
+        "damageFormulas": [
+            "469 / 100 * (7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level})",
+            "605 / 100 * (7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level})"
+        ],
+        "description": "You hurl molten lava at the target, dealing {0} to {1} Fire damage. If your Flame Shock is on the target, Lava Burst will deal a critical strike.",
         "playerClass": "shaman",
         "icon": "./abilityicon/lavaburst.jpg",
         "slot": "Hands"
@@ -390,11 +393,11 @@
       {
         "name": "Envenom",
         "damageFormulas": [
-            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 1 + {AP} * 0.09",
-            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 2 + {AP} * 0.18",
-            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 3 + {AP} * 0.27",
-            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 4 + {AP} * 0.36",
-            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 5 + {AP} * 0.45"
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 1 + {ap} * 0.09",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 2 + {ap} * 0.18",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 3 + {ap} * 0.27",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 4 + {ap} * 0.36",
+            "((5.741530 - 0.255683 * {level} + 0.032656 * {level} * {level}) * 100 / 100) * 5 + {ap} * 0.45"
         ],
         "description": "Finishing move that deals instant poison damage based on your Deadly Poison doses on the target. Following the Envenom attack you have a 75% increased frequency of applying Instant Poison for 1 sec plus an additional 1 sec per combo point. One dose is activated per combo point: 1 dose: {0} damage 2 doses: {1} damage 3 doses: {2} damage 4 doses: {3} damage 5 doses: {4} damage",
         "playerClass": "rogue",
@@ -493,8 +496,11 @@
     },
     {
         "name": "Mind Sear",
-        "damageFormulas": [],
-        "description": "Causes an explosion of shadow magic around the enemy target, causing 68 to 76 Shadow damage every 1 sec for 5 sec to all enemies within 10 yards around the target.",
+        "damageFormulas": [
+            "70 / 100 * (9.456667 + 0.635108 * {level} + 0.039063 * {level} * {level})",
+            "78 / 100 * (9.456667 + 0.635108 * {level} + 0.039063 * {level} * {level})"
+        ],
+        "description": "Causes an explosion of shadow magic around the enemy target, causing {0} to {1} Shadow damage every 1 sec for 5 sec to all enemies within 10 yards around the target.",
         "playerClass": "priest",
         "icon": "./abilityicon/mindsear.jpg",
         "slot": "Hands"
@@ -728,8 +734,10 @@
     },
     {
         "name": "Sacred Shield",
-        "damageFormulas": [],
-        "description": "Each time the target takes damage they gain a Sacred Shield, absorbing 120 damage and increasing the Paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec. In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional 100% over 12 sec. They cannot gain this effect more than once every 6 sec. Lasts 30 sec. This spell cannot be on more than one target at any one time.",
+        "damageFormulas": [
+            "36 * (38.258376 + 0.904195 * {level} + 0.161311 * {level} * {level}) / 100"
+        ],
+        "description": "Each time the target takes damage they gain a Sacred Shield, absorbing {0} damage and increasing the Paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec. In addition, causes your Flash of Light to heal targets with Sacred Shield for an additional 100% over 12 sec. They cannot gain this effect more than once every 6 sec. Lasts 30 sec. This spell cannot be on more than one target at any one time.",
         "playerClass": "paladin",
         "icon": "./abilityicon/sacredshield.jpg",
         "slot": "Feet"
