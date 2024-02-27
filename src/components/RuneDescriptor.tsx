@@ -3,6 +3,9 @@ import { images } from '../img/images'
 
 import { useAppSelector } from "../app/hooks"
 import { selectLevel } from '../features/levelselector/LevelSelectionSlice'
+import { selectAttackPower } from '../features/attackpowerpicker/AttackPowerPickerSlice'
+import { selectSpellPower } from '../features/spellpowerpicker/SpellPowerPickerSlice'
+import { selectHealerPower } from '../features/healerpowerpicker/HealerPowerPickerSlice'
 
 import './RuneDescriptor.css';
 
@@ -15,9 +18,12 @@ const RuneDescriptor = ({ rune }: RuneDescriptorProps) => {
     // then import in the selector - have the state at a higher level like where the Header is for laughs
 
     const level = useAppSelector(selectLevel);
+    const ap = useAppSelector(selectAttackPower);
+    const sp = useAppSelector(selectSpellPower);
+    const hp = useAppSelector(selectHealerPower);
 
     const substitutedDescription = () => {
-        const values = calculateValues(level, 0, rune.damageFormulas)
+        const values = calculateValues(level, {attackPower: ap, spellPower: sp, healingPower: hp}, rune.damageFormulas)
 
         return rune.description.replace(/{\d+}/g, (substring: string) => {
             const index = parseInt(substring.slice(1, -1)); 

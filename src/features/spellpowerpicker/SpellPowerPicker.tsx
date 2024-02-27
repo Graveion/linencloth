@@ -1,21 +1,21 @@
 import { useAppSelector, useAppDispatch } from "../../app/hooks"
 
-import { selectLevel, setValue } from './LevelSelectionSlice';
+import { selectSpellPower, setValue } from './SpellPowerPickerSlice';
 
 import NumberInput from '../../components/NumberInput/NumberInput'
 
-const LevelSelector = () => {
+const SelectPowerPicker = () => {
     const dispatch = useAppDispatch()
 
-    const inputValue = useAppSelector(selectLevel);
+    const inputValue = useAppSelector(selectSpellPower);
 
     const handleNewValue = (newValue: number) => {
         dispatch(setValue(newValue))
     };
 
     return (
-       <NumberInput text={"Level"} inputValue={inputValue} onChange={handleNewValue} />
+       <NumberInput text={"Spell Power"} inputValue={inputValue} onChange={handleNewValue} />
     );
 };
 
-export default LevelSelector;
+export default SelectPowerPicker;

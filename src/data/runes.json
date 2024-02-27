@@ -200,8 +200,8 @@
       {
         "name": "Molten Blast",
         "damageFormulas": [
-            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 72 / 100 + 5 / 100 * {power}",
-            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 108 / 100 + 5 / 100 * {power}"
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 72 / 100 + 5 / 100 * {sp}",
+            "(7.583798 + 0.471881 * {level} + 0.036599 * {level} * {level}) * 108 / 100 + 5 / 100 * {sp}"
         ],
         "description": "Blast up to 4 enemies in a cone in front of you for {0} to {1} Fire damage. This ability generates a high amount of threat. Flame Shock periodic damage has a 10% chance to reset the cooldown on Molten Blast.",
         "playerClass": "shaman",
@@ -787,8 +787,8 @@
     {
         "name": "Quick Strike",
         "damageFormulas": [
-            "{power} * 0.1",
-            "{power} * 0.2"
+            "{ap} * 0.1",
+            "{ap} * 0.2"
         ],
         "description": "A reckless instant melee attack with your two-handed weapon dealing {0} to {1} physical damage. This ability benefits from and triggers all effects associated with Heroic Strike.",
         "playerClass": "warrior",

@@ -1,4 +1,4 @@
-import { createNumberInputSlice, NumberInputState } from './NumberInput';
+import { createNumberInputSlice, NumberInputState } from '../../components/NumberInput/NumberInput';
 
 const levelSelectionSlice = createNumberInputSlice({
     name: 'levelSelection',

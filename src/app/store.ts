@@ -4,11 +4,17 @@ import logger from 'redux-logger'
 import classSelectMenuSlice from "../features/classselectmenu/ClassSelectMenuSlice" 
 import runeExplorerSlice from "../features/runeexplorer/RuneExplorerSlice" 
 import levelSelectionSlice from "../features/levelselector/LevelSelectionSlice" 
+import attackPowerPickerSlice from "../features/attackpowerpicker/AttackPowerPickerSlice"
+import spellPowerPickerSlice from "../features/spellpowerpicker/SpellPowerPickerSlice"
+import healerPowerPickerSlice from "../features/healerpowerpicker/HealerPowerPickerSlice"  
 
 const reducer = {
   classSelectMenu: classSelectMenuSlice,
   runeExplorer: runeExplorerSlice,
   levelSelection: levelSelectionSlice,
+  attackPowerPicker: attackPowerPickerSlice,
+  spellPowerPicker: spellPowerPickerSlice,
+  healerPowerPicker: healerPowerPickerSlice,
 }
 
 const store = configureStore({

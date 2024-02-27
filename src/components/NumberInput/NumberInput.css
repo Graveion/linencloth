@@ -1,6 +1,6 @@
 .number-input {
     display: flex;
-    align-items: last baseline;
+    align-items: center;
     gap: 10px
   }
   

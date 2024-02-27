@@ -9,6 +9,7 @@ import { loadRuneData } from '../runeexplorer/RuneExplorerSlice';
 
 import './ClassSelectMenu.css';
 import LevelSelector from "../levelselector/LevelSelector";
+import PowerPickers from "../../components/PowerPickers/PowerPicker";
 
 export const ClassSelectMenuRedux = () => {
   const dispatch = useAppDispatch()
@@ -45,6 +46,8 @@ export const ClassSelectMenuRedux = () => {
         <h2>{capitalise(selectedOption)}</h2>
         <LevelSelector />
       </div>
+
+      <PowerPickers />
       
       { renderClassButtons() }
     </div>

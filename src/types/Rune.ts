@@ -16,12 +16,20 @@ export interface Rune {
     name: string;
 }
 
-export function calculateValues(level: number = 40, power: number = 1, damageFormulas: string[]): number[] {
+export interface ClassPower {
+    attackPower: number,
+    spellPower: number,
+    healingPower: number
+}
+
+export function calculateValues(level: number = 40, power: ClassPower, damageFormulas: string[]): number[] {
     return damageFormulas.map(
         (formula: string, index: number): number => {
             const substitutedExpression = formula
                 .replaceAll('{level}', level.toString())
-                .replaceAll('{power}', power.toString());
+                .replaceAll('{ap}', power.attackPower.toString())
+                .replaceAll('{sp}', power.spellPower.toString())
+                .replaceAll('{hp}', power.healingPower.toString());
             
             try {
                 return math.evaluate(substitutedExpression);
