@@ -1,20 +1,20 @@
 import { configureStore } from '@reduxjs/toolkit'
 import logger from 'redux-logger'
 
-import classSelectMenuSlice from "../features/classselectmenu/ClassSelectMenuSlice" 
-import runeExplorerSlice from "../features/runeexplorer/RuneExplorerSlice" 
-import levelSelectionSlice from "../features/levelselector/LevelSelectionSlice" 
-import attackPowerPickerSlice from "../features/attackpowerpicker/AttackPowerPickerSlice"
-import spellPowerPickerSlice from "../features/spellpowerpicker/SpellPowerPickerSlice"
-import healerPowerPickerSlice from "../features/healerpowerpicker/HealerPowerPickerSlice"  
+import classSelectMenuReducer from "../features/classselectmenu/ClassSelectMenuSlice" 
+import runeExplorerReducer from "../features/runeexplorer/RuneExplorerSlice" 
+import levelSelectionReducer from "../features/levelselector/LevelSelectionSlice" 
+import attackPowerPickerReducer from "../features/attackpowerpicker/AttackPowerPickerSlice"
+import spellPowerPickerReducer from "../features/spellpowerpicker/SpellPowerPickerSlice"
+import healerPowerPickerReducer from "../features/healerpowerpicker/HealerPowerPickerSlice"  
 
 const reducer = {
-  classSelectMenu: classSelectMenuSlice,
-  runeExplorer: runeExplorerSlice,
-  levelSelection: levelSelectionSlice,
-  attackPowerPicker: attackPowerPickerSlice,
-  spellPowerPicker: spellPowerPickerSlice,
-  healerPowerPicker: healerPowerPickerSlice,
+  classSelectMenu: classSelectMenuReducer,
+  runeExplorer: runeExplorerReducer,
+  levelSelection: levelSelectionReducer,
+  attackPowerPicker: attackPowerPickerReducer,
+  spellPowerPicker: spellPowerPickerReducer,
+  healerPowerPicker: healerPowerPickerReducer,
 }
 
 const store = configureStore({

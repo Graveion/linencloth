@@ -154,8 +154,10 @@
       },
       {
         "name": "Healing Rain",
-        "damageFormulas": [],
-        "description": "Selects the area 15 yards around target player, and heals all of target player's party members within that area for 41 every second.",
+        "damageFormulas": [
+            "(29.888200 + 0.690312 * {level} + 0.136267 * {level} * {level}) * 15 / 100"
+        ],
+        "description": "Selects the area 15 yards around target player, and heals all of target player's party members within that area for {0} every second.",
         "playerClass": "shaman",
         "icon": "./abilityicon/healingrain.jpg",
         "slot": "Chest"
@@ -507,8 +509,11 @@
     },
     {
         "name": "Penance",
-        "damageFormulas": [],
-        "description": "Launches a volley of holy light at the target, causing 125 Holy damage to an enemy, or 283 healing to an ally, instantly and every 1 sec for 2 sec.",
+        "damageFormulas": [
+            "(9.456667 + 0.635108 * {level} + 0.039063 * {level} * {level}) * 128 / 100",
+            "(38.258376 + 0.904195 * {level} + 0.161311 * {level} * {level}) * 85 / 100"
+        ],
+        "description": "Launches a volley of holy light at the target, causing {0} Holy damage to an enemy, or {1} healing to an ally, instantly and every 1 sec for 2 sec.",
         "playerClass": "priest",
         "icon": "./abilityicon/penance.jpg",
         "slot": "Hands"
@@ -819,8 +824,10 @@
     },
     {
         "name": "Victory Rush",
-        "damageFormulas": [],
-        "description": "Instantly attack the target causing (1 + Attack power * 45 / 100) damage and healing you for 10% of your maximum health. Only useable within 20 sec after you kill an enemy that yields experience or honor.",
+        "damageFormulas": [
+            "(1 + {ap} * 45 / 100)"
+        ],
+        "description": "Instantly attack the target causing {0} damage and healing you for 10% of your maximum health. Only useable within 20 sec after you kill an enemy that yields experience or honor.",
         "playerClass": "warrior",
         "icon": "./abilityicon/victoryrush.jpg",
         "slot": "Hands"
@@ -923,32 +930,43 @@
     },
     {
         "name": "Regeneration",
-        "damageFormulas": [],
-        "description": "Heals the target for 419 health over 3 sec and applies Temporal Beacon for 30 sec.",
+        "damageFormulas": [
+            "(38.258376 + 0.904195 * {level} + 0.161311 * {level} * {level}) * 42 / 100 * 3"
+        ],
+        "description": "Heals the target for {0} health over 3 sec and applies Temporal Beacon for 30 sec.",
         "playerClass": "mage",
         "icon": "./abilityicon/regeneration.jpg",
         "slot": "Chest"
     },
     {
         "name": "Arcane Blast",
-        "damageFormulas": [],
-        "description": "Blasts the target with energy, dealing 386 to 449 Arcane damage. Each time you cast Arcane Blast, the damage and healing of all other Arcane spells is increased by 15% and mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 6 sec or until any other Arcane damage or healing spell is cast.",
+        "damageFormulas": [
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 453 / 100",
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 527 / 100"
+        ],
+        "description": "Blasts the target with energy, dealing {0} to {1} Arcane damage. Each time you cast Arcane Blast, the damage and healing of all other Arcane spells is increased by 15% and mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 6 sec or until any other Arcane damage or healing spell is cast.",
         "playerClass": "mage",
         "icon": "./abilityicon/arcaneblast.jpg",
         "slot": "Hands"
     },
     {
         "name": "Ice Lance",
-        "damageFormulas": [],
-        "description": "Deals 47 to 55 Frost damage to an enemy target. Causes triple damage against Frozen targets.",
+        "damageFormulas": [
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 55 / 100",
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 65 / 100"
+        ],
+        "description": "Deals {0} to {1} Frost damage to an enemy target. Causes triple damage against Frozen targets.",
         "playerClass": "mage",
         "icon": "./abilityicon/icelance.jpg",
         "slot": "Hands"
     },
     {
         "name": "Living Bomb",
-        "damageFormulas": [],
-        "description": "The target becomes a Living Bomb, taking 290 Fire damage over 12 sec. After 12 sec or when the spell is dispelled, the target explodes dealing 146 Fire damage to all enemies within 10 yards.",
+        "damageFormulas": [
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 85 / 100 * 4",
+            "(13.828124 + 0.018012 * {level} + 0.044141 * {level} * {level}) * 171 / 100"
+        ],
+        "description": "The target becomes a Living Bomb, taking {0} Fire damage over 12 sec. After 12 sec or when the spell is dispelled, the target explodes dealing {1} Fire damage to all enemies within 10 yards.",
         "playerClass": "mage",
         "icon": "./abilityicon/livingbomb.jpg",
         "slot": "Hands"
@@ -1035,8 +1053,11 @@
     },
     {
         "name": "Chronostatic Preservation",
-        "damageFormulas": [],
-        "description": "Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to 15 sec before it combusts and expires. When unleashed, heals a friendly target for 665 to 998. This spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.",
+        "damageFormulas": [
+            "(38.258376 + 0.904195 * {level} + 0.161311 * {level} * {level}) * 200 / 100",
+            "(38.258376 + 0.904195 * {level} + 0.161311 * {level} * {level}) * 300 / 100"
+        ],
+        "description": "Fuses Arcane, Fire, and Frost magic to freeze chronomantic energy into a stored state for later use. You can hold this energy for up to 15 sec before it combusts and expires. When unleashed, heals a friendly target for {0} to {1}. This spell is considered Arcane, Fire, and Frost for interactions with other spells, talents, and effects.",
         "playerClass": "mage",
         "icon": "./abilityicon/chronostaticpreservation.jpg",
         "slot": "Feet"

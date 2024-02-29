@@ -2,7 +2,7 @@ import { createNumberInputSlice, NumberInputState } from '../../components/Numbe
 
 const levelSelectionSlice = createNumberInputSlice({
     name: 'levelSelection',
-    initialState: { value: 40, min: 1, max: 40 },
+    initialState: { value: 40, min: 1, max: 60 },
 })
 
 export const { setValue } = levelSelectionSlice.actions;

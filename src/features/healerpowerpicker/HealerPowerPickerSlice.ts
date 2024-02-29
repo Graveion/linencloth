@@ -2,7 +2,7 @@ import { createNumberInputSlice, NumberInputState } from '../../components/Numbe
 
 const healerPowerPickerSlice = createNumberInputSlice({
     name: 'healerPowerPicker',
-    initialState: { value: 450, min: 1, max: 2000 },
+    initialState: { value: 300, min: 1, max: 2000 },
 })
 
 export const { setValue : setHealerPower } = healerPowerPickerSlice.actions;

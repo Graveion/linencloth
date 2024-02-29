@@ -2,7 +2,7 @@ import { createNumberInputSlice, NumberInputState } from '../../components/Numbe
 
 const spellPowerPickerSlice = createNumberInputSlice({
     name: 'spellPowerPicker',
-    initialState: { value: 450, min: 1, max: 2000 },
+    initialState: { value: 200, min: 1, max: 2000 },
 })
 
 export const { setValue: setSpellPower } = spellPowerPickerSlice.actions;

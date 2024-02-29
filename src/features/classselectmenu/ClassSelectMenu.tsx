@@ -14,6 +14,7 @@ import PowerPickers from "../../components/PowerPickers/PowerPicker";
 import { setAttackPower } from '../../features/attackpowerpicker/AttackPowerPickerSlice'
 import { setHealerPower } from "../healerpowerpicker/HealerPowerPickerSlice";
 import { setSpellPower } from "../spellpowerpicker/SpellPowerPickerSlice";
+import Tooltip from "../../components/Tooltip";
 
 export const ClassSelectMenuRedux = () => {
   const dispatch = useAppDispatch()
@@ -30,6 +31,7 @@ export const ClassSelectMenuRedux = () => {
 
   const renderClassButtons = () => {    
     return Object.values(PlayerClass).map((option) => (
+     <Tooltip text={option}>
       <button
         className={option === selectedOption ? 'button-selected' : 'class-button'}
         key={option}
@@ -43,6 +45,8 @@ export const ClassSelectMenuRedux = () => {
         />
 
       </button>
+
+      </Tooltip>
 
     ));
   };
