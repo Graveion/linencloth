@@ -14,9 +14,6 @@ interface RuneDescriptorProps {
 }
 
 const RuneDescriptor = ({ rune }: RuneDescriptorProps) => {
-    // todo: have values for power / level via class select
-    // then import in the selector - have the state at a higher level like where the Header is for laughs
-
     const level = useAppSelector(selectLevel);
     const ap = useAppSelector(selectAttackPower);
     const sp = useAppSelector(selectSpellPower);

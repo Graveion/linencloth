@@ -38,7 +38,7 @@ export const createNumberInputSlice = ({
           state.value = value;
         }
       },
-    }
+    },
   });
 };
 
